@@ -76,7 +76,8 @@ $(document).ready(function () {
 }
 
 $.ajax(settings).done(function (response) {
-  console.log(response);
+  console.log(response[0].openHouse[0].polytechnic);
+  $(".eDesc").text(response[0].openHouse[0].polytechnic);
 });
 
     }); //end doc ready
