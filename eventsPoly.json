@@ -1,0 +1,57 @@
+{
+    "events":{
+        "openHouse":[
+            {
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "eventName": "NP Open House 2020",
+                "date": "9th Jan to 11th Jan 2020",
+                "time": "10am to 6pm",
+                "address": "535 Clementi Road, Singapore 599489",
+                "website": "https://www.np.edu.sg/jointadmissionsexercise/Pages/default.aspx"
+            },
+            {
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "eventName": "NYP Open House 2020",
+                "date": "9th Jan to 11th Jan 2020",
+                "time": "10am to 6pm",
+                "address": "Nanyang Polytechnic 180 Ang Mo Kio Ave 8",
+                "website": "https://www.nyp.edu.sg/openhouse.html",
+                "preRegister": "https://www.eventbrite.sg/e/nanyang-polytechic-open-house-2020-pre-registration-registration-72210775373?utm_campaign=oh2020&utm_medium=homepage-cta&utm_source=oh-microsite"
+            },
+            {
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "eventName": "Night Open House 2020",
+                "date": "10th Jan",
+                "time": "6pm to 11pm",
+                "address": "Nanyang Polytechnic 180 Ang Mo Kio Ave 8",
+                "website": "https://www.nyp.edu.sg/openhouse.html",
+                "preRegister": "https://www.eventbrite.sg/e/nanyang-polytechic-open-house-2020-pre-registration-registration-72210775373?utm_campaign=oh2020&utm_medium=homepage-cta&utm_source=oh-microsite"
+            },
+            {
+             "polytechnic":"Republic Polytechnic (RP)",
+                "eventName": "RP Open House 2020",
+                "date": "9th Jan to 11th Jan",
+                "time": "10am to 6pm",
+                "address": "9 Woodlands Avenue 9, Singapore 738964",
+                "website": "https://www.rp.edu.sg/discover/openhouse.html"
+            },
+            {
+                "polytechnic":"Singapore Polytechnic (SP)",
+                   "eventName": "SP Open House 2020",
+                   "startDate": "9th Jan to 11th Jan",
+                   "time": "10am to 6pm",
+                   "address": "500 Dover Road, Singapore 139651",
+                   "website": "https://openhouse.sp.edu.sg/"
+               },
+               {
+                "polytechnic":"Temasek Polytechnic (TP)",
+                   "eventName": "TP Open House 2020",
+                   "startDate": "9th Jan to 11th Jan",
+                   "time": "10am to 6pm",
+                   "address": "21 Tampines Avenue 1 Singapore 529757",
+                   "website": "https://www.tp.edu.sg/events/open-house-2020"
+               }
+
+        ]
+    }
+}
