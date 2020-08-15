@@ -166,9 +166,6 @@ $("#suggestedEvents").mouseleave(function(){
     
       });
 
-
-
-
         $(".NPoly").click(function(){
               $(".eventDis").hide();
               $(".NP").show();
