@@ -50,13 +50,36 @@ var navSymbols = document.getElementsByClassName("navSym")
       }
 
 
-
+var searching = false;
 
 
 
 
 $(document).ready(function(){
 $(".eduSpaceLogo").hide();
+
+$(".suggestedEvents").hide();
+
+
+
+$(".searchEvents").focus(function(){
+$(".suggestedEvents").show();
+});
+
+$(".searchEvents").blur(function(){
+    if(searching==false){
+    $(".suggestedEvents").hide();
+    }
+    });
+
+$(".suggestedEvents").mouseenter(function(){
+    searching = true;
+    console.log(searching);
+});
+$(".suggestedEvents").mouseleave(function(){
+    searching = false;
+    console.log(searching);
+});
 
     $(".hamburger").click(function(){
         console.log(navWords)
