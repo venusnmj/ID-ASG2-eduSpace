@@ -9,7 +9,8 @@
                         "polyClass":"SP",
                         "courseCode": "S64",
                         "2020L1R4": "3 to 10",
-                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/applied-chemistry"
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/applied-chemistry",
+                        "new": "no"
                     },
                     {
                         "courseName": "Biomedical Science",
@@ -17,7 +18,8 @@
                         "polyClass":"SP",
                         "courseCode": "S98",
                         "2020L1R4": "3 to 8",
-                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/biomedical-science"
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/biomedical-science",
+                        "new": "no"
                     },
                     {
                         "courseName": "Chemical Engineering",
@@ -25,7 +27,8 @@
                         "polyClass":"SP",
                         "courseCode": "S70",
                         "2020L1R4": "7 to 13",
-                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/chemical-engineering"
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/chemical-engineering",
+                        "new": "no"
                     },
                     {
                         "courseName": "Food Science & Technology",
@@ -33,7 +36,8 @@
                         "polyClass":"SP",
                         "courseCode": "S47",
                         "2020L1R4": "7 to 13",
-                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/food-science-technology"
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/food-science-technology",
+                        "new": "no"
                     },
                     {
                         "courseName": "Perfumery & Cosmetic Science",
@@ -41,7 +45,8 @@
                         "polyClass":"SP",
                         "courseCode": "S38",
                         "2020L1R4": "6 to 12",
-                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/perfumery-cosmetic-science"
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/perfumery-cosmetic-science",
+                        "new": "no"
                     }
                 ]
             },
@@ -53,7 +58,8 @@
                         "polyClass":"NYP",
                         "courseCode": "C49",
                         "2020L1R4": "9 to 12",
-                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/perfumery-cosmetic-science"
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/perfumery-cosmetic-science",
+                        "new": "no"
                     },
                     {
                         "courseName": "Chemical & Pharmaceutical Technology",
@@ -61,7 +67,8 @@
                         "polyClass":"NYP",
                         "courseCode": "C73",
                         "2020L1R4": "6 to 15",
-                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-chemical-and-pharmaceutical-technology.html"
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-chemical-and-pharmaceutical-technology.html",
+                        "new": "no"
                     },
                     {
                         "courseName": "Food Science & Nutrition",
@@ -69,7 +76,8 @@
                         "polyClass":"NYP",
                         "courseCode": "C69",
                         "2020L1R4": "6 to 13",
-                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-food-science-and-nutrition.html"
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-food-science-and-nutrition.html",
+                        "new": "no"
                     },
                     {
                         "courseName": "Medicinal Chemistry",
@@ -77,7 +85,8 @@
                         "polyClass":"NYP",
                         "courseCode": "C45",
                         "2020L1R4": "6 to 10",
-                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-medicinal-chemistry.html"
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-medicinal-chemistry.html",
+                        "new": "no"
                     },
                     {
                         "courseName": "Pharmaceutical Science",
@@ -85,7 +94,8 @@
                         "polyClass":"NYP",
                         "courseCode": "C65",
                         "2020L1R4": "5 to 10",
-                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-pharmaceutical-science.html"
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-pharmaceutical-science.html",
+                        "new": "no"
                     }
                 ]
             },
@@ -97,7 +107,8 @@
                         "polyClass":"TP",
                         "courseCode": "T38",
                         "2020L1R4": "9 to 14",
-                        "website":"https://www.tp.edu.sg/schools/eng/biomedical-engineering"
+                        "website":"https://www.tp.edu.sg/schools/eng/biomedical-engineering",
+                        "new": "no"
                     },
                     {
                         "courseName": "Chemical Engineering",
@@ -105,7 +116,8 @@
                         "polyClass":"TP",
                         "courseCode": "T33",
                         "2020L1R4": "7 to 15" ,
-                        "website":"https://www.tp.edu.sg/schools/asc/chemical-engineering"
+                        "website":"https://www.tp.edu.sg/schools/asc/chemical-engineering",
+                        "new": "no"
                     },
                     {
                         "courseName": "Food, Nutrition & Culinary Science",
@@ -113,7 +125,8 @@
                         "polyClass":"TP",
                         "courseCode": "T26",
                         "2020L1R4": "5 to 15" ,
-                        "website":"https://www.tp.edu.sg/schools/asc/food-nutrition-and-culinary-science"
+                        "website":"https://www.tp.edu.sg/schools/asc/food-nutrition-and-culinary-science",
+                        "new": "no"
                     },
                     {
                         "courseName": "Medical Biotechnology",
@@ -121,7 +134,8 @@
                         "polyClass":"TP",
                         "courseCode": "T64",
                         "2020L1R4": "5 to 11" ,
-                        "website":"https://www.tp.edu.sg/schools/asc/medical-biotechnology"
+                        "website":"https://www.tp.edu.sg/schools/asc/medical-biotechnology",
+                        "new": "no"
                     },
                     {
                         "courseName": "Pharmaceutical Science",
@@ -129,7 +143,8 @@
                         "polyClass":"TP",
                         "courseCode": "T25",
                         "2020L1R4": "4 to 11" ,
-                        "website":"https://www.tp.edu.sg/schools/asc/pharmaceutical-science"
+                        "website":"https://www.tp.edu.sg/schools/asc/pharmaceutical-science",
+                        "new": "no"
                     },
                     {
                         "courseName": "Veterinary Technology",
@@ -137,7 +152,8 @@
                         "polyClass":"TP",
                         "courseCode": "T45",
                         "2020L1R4": "3 to 9" ,
-                        "website":"https://www.tp.edu.sg/schools/asc/veterinary-technology"
+                        "website":"https://www.tp.edu.sg/schools/asc/veterinary-technology",
+                        "new": "no"
                     }
                 ]
             },
@@ -149,7 +165,8 @@
                         "polyClass":"NP",
                         "courseCode": "N59",
                         "2020L1R4": "3 to 8",
-                        "website":"https://www.np.edu.sg/lsct/Pages/bms.aspx"
+                        "website":"https://www.np.edu.sg/lsct/Pages/bms.aspx",
+                        "new": "no"
                     },
                     {
                         "courseName": "Chemical & Biomolecular Engineering",
@@ -157,7 +174,8 @@
                         "polyClass":"NP",
                         "courseCode": "N56",
                         "2020L1R4": "4 to 11",
-                        "website":"https://www.np.edu.sg/lsct/Pages/cbe.aspx"
+                        "website":"https://www.np.edu.sg/lsct/Pages/cbe.aspx",
+                        "new": "no"
                     },
                     {
                         "courseName": "Environmental & Water Technology",
@@ -165,7 +183,8 @@
                         "polyClass":"NP",
                         "courseCode": "N74",
                         "2020L1R4": "10 to 14",
-                        "website":"https://www.np.edu.sg/lsct/Pages/ewt.aspx"
+                        "website":"https://www.np.edu.sg/lsct/Pages/ewt.aspx",
+                        "new": "no"
                     },
                     {
                         "courseName": "Landscape Design & Horticulture",
@@ -173,7 +192,8 @@
                         "polyClass":"NP",
                         "courseCode": "N57",
                         "2020L1R4": "7 to 15",
-                        "website":"https://www.np.edu.sg/lsct/Pages/ldh.aspx"
+                        "website":"https://www.np.edu.sg/lsct/Pages/ldh.aspx",
+                        "new": "no"
                     },
                     {
                         "courseName": "Pharmaceutical Science",
@@ -181,7 +201,8 @@
                         "polyClass":"NP",
                         "courseCode": "N73",
                         "2020L1R4": "3 to 9",
-                        "website":"https://www.np.edu.sg/lsct/Pages/pharm.aspx"
+                        "website":"https://www.np.edu.sg/lsct/Pages/pharm.aspx",
+                        "new": "no"
                     }
                 ]
             },
@@ -193,7 +214,8 @@
                         "polyClass":"RP",
                         "courseCode": "R14",
                         "2020L1R4": "8 to 12",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-biomedical-science"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-biomedical-science",
+                        "new": "no"
                     },
                     {
                         "courseName": "Biotechnology",
@@ -201,7 +223,8 @@
                         "polyClass":"RP",
                         "courseCode": "R16",
                         "2020L1R4": "11 to 17",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-biotechnology"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-biotechnology",
+                        "new": "no"
                     },
                     {
                         "courseName": "Common Science Programme",
@@ -209,7 +232,8 @@
                         "polyClass":"RP",
                         "courseCode": "R59",
                         "2020L1R4": "9 to 19",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/common-science-programme"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/common-science-programme",
+                        "new": "yes"
                     },
                     {
                         "courseName": "Environmental Science",
@@ -217,7 +241,8 @@
                         "polyClass":"RP",
                         "courseCode": "R29",
                         "2020L1R4": "8 to 19",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-environmental-science"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-environmental-science-2020",
+                        "new": "no"
                     },
                     {
                         "courseName": "Marine Science & Aquaculture",
@@ -225,7 +250,8 @@
                         "polyClass":"RP",
                         "courseCode": "R53",
                         "2020L1R4": "9 to 13",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-marine-science-and-aquaculture"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-marine-science-and-aquaculture-2020",
+                        "new": "no"
                     },
                     {
                         "courseName": "Materials Science",
@@ -233,7 +259,8 @@
                         "polyClass":"RP",
                         "courseCode": "R17",
                         "2020L1R4": "7 to 21",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-materials-science"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-materials-science-2020",
+                        "new": "no"
                     },
                     {
                         "courseName": "Pharmaceutical Science",
@@ -241,10 +268,1662 @@
                         "polyClass":"RP",
                         "courseCode": "R22",
                         "2020L1R4": "11 to 17",
-                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-pharmaceutical-science"
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-pharmaceutical-science",
+                        "new": "no"
                     }
                 ]
             }
+        ],
+
+
+        "BuiltEnvironment":[
+            {
+                "SP":[
+                    {
+                        "courseName": "Architecture",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S66",
+                        "2020L1R4": "4 to 14",
+                        "website":"https://www.sp.edu.sg/abe/courses/full-time-diplomas/architecture",
+                        "new": "no"
+                    },
+                    {
+                        "courseName": "Civil Engineering",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S68",
+                        "2020L1R4": "7 to 22",
+                        "website":"https://www.sp.edu.sg/abe/courses/full-time-diplomas/civil-engineering",
+                        "new": "no"
+                    },
+                    {
+                        "courseName": "Facilities Management",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S95",
+                        "2020L1R4": "11 to 17",
+                        "website":"https://www.sp.edu.sg/abe/courses/full-time-diplomas/facilities-management",
+                        "new": "no"
+                    },
+                    {
+                        "courseName": "Integrated Events & Project Management",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S50",
+                        "2020L1R4": "6 to 15",
+                        "website":"https://www.sp.edu.sg/abe/courses/full-time-diplomas/integrated-events-project-management",
+                        "new": "no"
+                    },
+                    {
+                        "courseName": "Landscape Architecture",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S94",
+                        "2020L1R4": "12 to 15",
+                        "website":"https://www.sp.edu.sg/abe/courses/full-time-diplomas/landscape-architecture",
+                        "new": "no"
+                    }
+                ]
+            },
+            {"NYP":
+            [
+            {
+                "courseName": "Architecture",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C38",
+                "2020L1R4": "11 to 17",
+                "website":"https://www.nyp.edu.sg/schools/sdn/full-time-courses/architecture.html",
+                "new": "no"
+            }
+            ]
+        },
+        {"TP":[
+            {
+                "courseName": "Green Building & Sustainability",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T29",
+                "2020L1R4": "13 to 18",
+                "website":"http://www.tp.edu.sg/schools/eng/green-building-and-sustainability",
+                "new": "no"
+            },
+            {
+                "courseName": "Integrated Facility Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T28",
+                "2020L1R4": "8 to 18",
+                "website":"https://www.tp.edu.sg/schools/eng/integrated-facility-management",
+                "new": "no"
+            }
         ]
+        },
+        {"NP":[
+            {
+                "courseName": "Hotel & Leisure Facilities Management",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N40",
+                "2020L1R4": "6 to 13",
+                "website":"https://www.np.edu.sg/de/Pages/hlfm.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "Real Estate Business",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N48",
+                "2020L1R4": "10 to 14",
+                "website":"https://www.np.edu.sg/de/Pages/reb.aspx",
+                "new": "no"
+            }
+        ]},
+        {"RP":[
+            {
+                "courseName": "Green Building Energy Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R41",
+                "2020L1R4": "11 to 26",
+                "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-green-building-energy-management-2020",
+                "new": "no"
+            }
+        ]
+        }
+        ],
+
+
+        "BusinessManagement":[
+            {"SP":[
+                {
+                    "courseName": "Accountancy",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S75",
+                    "2020L1R4": "5 to 13",
+                    "website":"https://www-sp-edu-sg-admin.cwp.sg/sb/courses/full-time-diplomas/DAC",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Banking & Finance",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S76",
+                    "2020L1R4": "7 to 12",
+                    "website":"https://www.sp.edu.sg/sb/courses/full-time-diplomas/banking-finance",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Business Administration",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S71",
+                    "2020L1R4": "3 to 13",
+                    "website":"https://www.sp.edu.sg/sb/courses/full-time-diplomas/business-administration",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Business Programme",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S31",
+                    "2020L1R4": "4 to 12",
+                    "website":"https://www.sp.edu.sg/sb/courses/full-time-diplomas/common-business-programme",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Human Resource Management with Psychology",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S48",
+                    "2020L1R4": "4 to 10",
+                    "website":"https://www.sp.edu.sg/sb/courses/full-time-diplomas/human-resource-management-with-psychology",
+                    "new": "no"
+                }
+            ]
+            },
+            {"NYP":[
+                {
+                    "courseName": "Accountancy & Finance",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C98",
+                    "2020L1R4": "7 to 12",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/accountancy-and-finance.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Banking & Finance",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C96",
+                    "2020L1R4": "8 to 13",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/banking-and-finance.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Business & Financial Technology",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C35",
+                    "2020L1R4": "7 to 16",
+                    "website":"https://www.nyp.edu.sg/schools/sit/full-time-courses/business-and-financial-technology.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Business Management",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C94",
+                    "2020L1R4": "7 to 16",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/business-management.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Business Programme",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C34",
+                    "2020L1R4": "9 to 16",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/common-business-programme.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Food & Beverage Business",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C46",
+                    "2020L1R4": "5 to 16",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/food-and-beverage-business.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Hospitality & Tourism Management",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C67",
+                    "2020L1R4": "5 to 14",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/hospitality-and-tourism-management.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Mass Media Management",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C93",
+                    "2020L1R4": "5 to 12",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/mass-media-management.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Sport & Wellness Management",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C81",
+                    "2020L1R4": "5 to 14",
+                    "website":"https://www.nyp.edu.sg/schools/sbm/full-time-courses/sports-and-wellness.html",
+                    "new": "no"
+                }
+            ]
+        },
+        {"TP":[
+            {
+                "courseName": "Accountancy & Finance",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T02",
+                "2020L1R4": "5 to 11",
+                "website":"https://www.tp.edu.sg/schools/bus/accountancy-and-finance",
+                "new": "no"
+            },
+            {
+                "courseName": "Aviation Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T04",
+                "2020L1R4": "4 to 14",
+                "website":"https://www.tp.edu.sg/schools/eng/aviation-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Business",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T10",
+                "2020L1R4": "6 to 13",
+                "website":"https://www.tp.edu.sg/schools/bus/business#",
+                "new": "no"
+            },
+            {
+                "courseName": "Business Process & Systems Engineering",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T43",
+                "2020L1R4": "13 to 17",
+                "website":"https://www.tp.edu.sg/schools/eng/business-process-and-systems-engineering",
+                "new": "no"
+            },
+            {
+                "courseName": "Common Business Programme",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T01",
+                "2020L1R4": "6 to 15",
+                "website":"https://www.tp.edu.sg/schools/bus/common-business-programme",
+                "new": "no"
+            },
+            {
+                "courseName": "Communications & Media Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T40",
+                "2020L1R4": "7 to 13",
+                "website":"https://www.tp.edu.sg/schools/bus/communications-and-media-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Culinary & Catering Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T18",
+                "2020L1R4": "7 to 15",
+                "website":"https://www.tp.edu.sg/schools/bus/culinary-and-catering-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Financial Business Informatics",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T17",
+                "2020L1R4": "10 to 14",
+                "website":"https://www.tp.edu.sg/schools/iit/financial-business-informatics",
+                "new": "no"
+            },
+            {
+                "courseName": "Hospitality & Tourism Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T08",
+                "2020L1R4": "5 to 17",
+                "website":"https://www.tp.edu.sg/schools/bus/hospitality-and-tourism-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Law & Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T09",
+                "2020L1R4": "5 to 12",
+                "website":"https://www.tp.edu.sg/schools/bus/law-and-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Logistics & Operations Management",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T07",
+                "2020L1R4": "11 to 17",
+                "website":"https://www.tp.edu.sg/schools/bus/logistics-and-operations-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Marketing",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T67",
+                "2020L1R4": "9 to 15",
+                "website":"https://www.tp.edu.sg/schools/bus/marketing",
+                "new": "no"
+            }
+        ]},
+        {"NP":[
+            {
+                "courseName": "Accountancy",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N51",
+                "2020L1R4": "3 to 10",
+                "website":"https://www.np.edu.sg/ba/Pages/acc.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "Arts Business Management",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N91",
+                "2020L1R4": "4 to 8",
+                "website":"https://www.np.edu.sg/hms/Pages/abm.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "Banking & Finance",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N53",
+                "2020L1R4": "4 to 10",
+                "website":"https://www.np.edu.sg/ba/Pages/bf.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "Business Studies",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N45",
+                "2020L1R4": "3 to 9",
+                "website":"https://www.np.edu.sg/ba/Pages/bs.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "Common Business Programme",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N97",
+                "2020L1R4": "6 to 11",
+                "website":"https://www.np.edu.sg/ba/Pages/cbp.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "International Trade & Business",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N85",
+                "2020L1R4": "6 to 11",
+                "website":"https://www.np.edu.sg/ba/Pages/itb.aspx",
+                "new": "no"
+            },
+            {
+                "courseName": "Tourism & Resort Management",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N72",
+                "2020L1R4": "4 to 12",
+                "website":"https://www.np.edu.sg/ba/Pages/trm.aspx",
+                "new": "no"
+            }
+        ]},
+        {"RP":[
+            {
+                "courseName": "Aviation Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R39",
+                "2020L1R4": "11 to 20",
+                "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-aviation-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Business",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R60",
+                "2020L1R4": "10 to 25",
+                "website":"https://www.rp.edu.sg/SMC/full-time-diplomas/Details/diploma-in-business",
+                "new": "yes"
+            },
+            {
+                "courseName": "Common Business Programme",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R57",
+                "2020L1R4": "13 to 26",
+                "website":"https://www.rp.edu.sg/SMC/full-time-diplomas/Details/common-business-programme",
+                "new": "no"
+            },
+            {
+                "courseName": "Consumer Behaviour & Research",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R48",
+                "2020L1R4": "15 to 20",
+                "website":"https://www.rp.edu.sg/SMC/full-time-diplomas/Details/diploma-in-consumer-behaviour-and-research",
+                "new": "no"
+            },
+            {
+                "courseName": "Customer Experience Management with Business",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R34",
+                "2020L1R4": "15 to 26",
+                "website":"https://www.rp.edu.sg/SOH/full-time-diplomas/Details/diploma-in-customer-experience-management-with-business",
+                "new": "no"
+            },
+            {
+                "courseName": "Hotel & Hospitality Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R37",
+                "2020L1R4": "14 to 26",
+                "website":"https://www.rp.edu.sg/SOH/full-time-diplomas/Details/diploma-in-customer-experience-management-with-business",
+                "new": "no"
+            },
+            {
+                "courseName": "Human Resource Management with Psychology",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R52",
+                "2020L1R4": "11 to 16",
+                "website":"https://www.rp.edu.sg/SMC/full-time-diplomas/Details/diploma-in-human-resource-management-with-psychology",
+                "new": "no"
+            },
+            {
+                "courseName": "Industrial & Operations Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R11",
+                "2020L1R4": "13 to 24",
+                "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-industrial-and-operations-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Integrated Events Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R28",
+                "2020L1R4": "11 to 26",
+                "website":"https://www.rp.edu.sg/Soh/full-time-diplomas/Details/diploma-in-integrated-events-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Outdoor & Adventure Learning",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R33",
+                "2020L1R4": "16 to 23",
+                "website":"https://www.rp.edu.sg/Shl/full-time-diplomas/Details/diploma-in-outdoor-and-adventure-learning",
+                "new": "no"
+            },
+            {
+                "courseName": "Restaurant & Culinary Operations",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R46",
+                "2020L1R4": "14 to 26",
+                "website":"https://www.rp.edu.sg/soh/full-time-diplomas/Details/diploma-in-restaurant-and-culinary-operations",
+                "new": "no"
+            },
+            {
+                "courseName": "Supply Chain Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R21",
+                "2020L1R4": "15 to 26",
+                "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-supply-chain-management",
+                "new": "no"
+            }
+        ]
+        }
+        ],
+
+        "Engineering":[
+            {"SP":[
+                {
+                    "courseName": "Aeronautical Engineering",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S88",
+                    "2020L1R4": "4 to 14",
+                    "website":"https://www.sp.edu.sg/mae/courses/full-time-diplomas/aeronautical-engineering-",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Aerospace Electronics",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S90",
+                    "2020L1R4": "6 to 15",
+                    "website":"https://www.sp.edu.sg/eee/courses/full-time-diplomas/aerospace-electronics",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Engineering Programme",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S40",
+                    "2020L1R4": "4 to 16",
+                    "website":"https://www.sp.edu.sg/mae/courses/common-engineering-programme",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Computer Engineering",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S53",
+                    "2020L1R4": "4 to 14",
+                    "website":"https://www.sp.edu.sg/eee/courses/full-time-diplomas/computer-engineering",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Electrical & Electronic Engineering",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S99",
+                    "2020L1R4": "8 to 19",
+                    "website":"https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/electrical-electronic-engineering/overview",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Engineering with Business",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S42",
+                    "2020L1R4": "4 to 13",
+                    "website":"https://www.sp.edu.sg/eee/courses/full-time-diplomas/engineering-with-business",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Mechanical Engineering",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S91",
+                    "2020L1R4": "7 to 16",
+                    "website":"https://www.sp.edu.sg/mae/courses/full-time-diplomas/mechanical-engineering",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Mechatronics & Robotics",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S73",
+                    "2020L1R4": "5 to 11",
+                    "website":"https://www.sp.edu.sg/mae/courses/full-time-diplomas/mechatronics-and-robotics",
+                    "new": "no"
+                }
+            ]},
+            {"NYP":[
+                {
+                    "courseName": "Advanced & Digital Manufacturing",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C62",
+                    "2020L1R4": "11 to 26",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/advanced-and-digital-manufacturing.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Aeronautical & Aerospace Technology",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C51",
+                    "2020L1R4": "6 to 14",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/aeronautical-and-aerospace-technology.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Aerospace Systems & Management",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C52",
+                    "2020L1R4": "9 to 15",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/aeronautical-and-aerospace-technology.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Biomedical Engineering",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C71",
+                    "2020L1R4": "10 to 14",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/biomedical-engineering.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Engineering Programme",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C42",
+                    "2020L1R4": "10 to 26",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/common-engineering-programme.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Electronic & Computer Engineering",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C89",
+                    "2020L1R4": "8 to 22",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/electronic-systems.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Engineering With Business",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C41",
+                    "2020L1R4": "9 to 16",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/engineering-with-business.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Infocomm & Media Engineering",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C75",
+                    "2020L1R4": "7 to 24",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/infocomm-and-media-engineering.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Nanotechnology & Materials Science",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C50",
+                    "2020L1R4": "7 to 16",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/nanotechnology-and-materials-science.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Robotics & Mechatronics",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C87",
+                    "2020L1R4": "5 to 23",
+                    "website":"https://www.nyp.edu.sg/schools/seg/full-time-courses/robotics-and-mechatronics.html",
+                    "new": "no"
+                }
+            ]},
+            {"TP":[
+                {
+                    "courseName": "Aerospace Electronics",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T50",
+                    "2020L1R4": "7 to 16",
+                    "website":"http://www.tp.edu.sg/schools/eng/aerospace-electronics",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Aerospace Engineering",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T51",
+                    "2020L1R4": "6 to 14",
+                    "website":"https://www.tp.edu.sg/schools/eng/aerospace-engineering",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Clean Energy",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T52",
+                    "2020L1R4": "8 to 18",
+                    "website":"http://www.tp.edu.sg/schools/eng/clean-energy",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Engineering Programme",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T56",
+                    "2020L1R4": "6 to 21",
+                    "website":"https://www.tp.edu.sg/schools/eng/common-engineering-programme",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Computer Engineering",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T13",
+                    "2020L1R4": "8 to 16",
+                    "website":"http://www.tp.edu.sg/schools/eng/computer-engineering",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Electronics",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T65",
+                    "2020L1R4": "11 to 20",
+                    "website":"https://www.tp.edu.sg/schools/eng/electronics",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Mechatronics",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T66",
+                    "2020L1R4": "12 to 20",
+                    "website":"https://www.tp.edu.sg/schools/eng/mechatronics",
+                    "new": "no"
+                }
+            ]},
+            {"NP":[
+                {
+                    "courseName": "Aerospace Engineering",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N65",
+                    "2020L1R4": "6 to 11",
+                    "website":"https://www.np.edu.sg/soe/Pages/aeg.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Automation & Mechatronic Systems",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N50",
+                    "2020L1R4": "8 to 17",
+                    "website":"https://www.np.edu.sg/soe/Pages/ams.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Biomedical Engineering",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N60",
+                    "2020L1R4": "6 to 10",
+                    "website":"https://www.np.edu.sg/soe/Pages/bme.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Engineering Programme",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N71",
+                    "2020L1R4": "7 to 19",
+                    "website":"https://www.np.edu.sg/soe/Pages/cep.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Electrical Engineering",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N43",
+                    "2020L1R4": "11 to 21",
+                    "website":"https://www.np.edu.sg/soe/Pages/ee.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Electronic & Computer Engineering",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N44",
+                    "2020L1R4": "5 to 15",
+                    "website":"https://www.np.edu.sg/soe/Pages/ece.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Engineering Science",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N93",
+                    "2020L1R4": "4 to 11",
+                    "website":"https://www.np.edu.sg/soe/Pages/es.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Mechanical Engineering",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N41",
+                    "2020L1R4": "8 to 18",
+                    "website":"https://www.np.edu.sg/soe/Pages/me.aspx",
+                    "new": "no"
+                }
+            ]},
+            {"RP":[
+                {
+                    "courseName": "Aerospace Engineering",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R40",
+                    "2020L1R4": "10 to 23",
+                    "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-aerospace-engineering",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common Engineering Programme",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R42",
+                    "2020L1R4": "11 to 26",
+                    "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/common-engineering-programme",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Electrical & Electronic Engineering",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R50",
+                    "2020L1R4": "10 to 26",
+                    "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-electrical-and-electronic-engineering",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Engineering Design with Business",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R56",
+                    "2020L1R4": "15 to 25",
+                    "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-engineering-design-with-business",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Engineering Systems & Management",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R54",
+                    "2020L1R4": "16 to 26",
+                    "website":"https://www.rp.edu.sg/SEG/full-time-diplomas/Details/diploma-in-engineering-systems-and-management",
+                    "new": "no"
+                }
+            ]}
+        ],
+        "HealthScience":[
+            {"SP":[
+                {
+                    "courseName": "Optometry",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S67",
+                    "2020L1R4": "6 to 12",
+                    "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/optometry",
+                    "new": "no"
+                }
+            ]},
+            {"NYP":[
+                {
+                    "courseName": "Nursing",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C97",
+                    "2020L1R4": "4 to 28",
+                    "website":"http://www.nyp.edu.sg/schools/shss/full-time-courses/nursing.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Oral Health Therapy",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C72",
+                    "2020L1R4": "9 to 11",
+                    "website":"http://www.nyp.edu.sg/schools/shss/full-time-courses/oral-health-therapy.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Social Sciences (Social Work)",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C47",
+                    "2020L1R4": "4 to 10",
+                    "website":"http://www.nyp.edu.sg/schools/shss/full-time-courses/social-sciences.html",
+                    "new": "no"
+                }
+            ]},
+
+
+            {"NP":[
+                {
+                    "courseName": "Nursing",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N69",
+                    "2020L1R4": "4 to 28",
+                    "website":"https://www.np.edu.sg/hs/Pages/nsg.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Optometry",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N83",
+                    "2020L1R4": "4 to 12",
+                    "website":"https://www.np.edu.sg/hs/Pages/opt.aspx",
+                    "new": "no"
+                }
+            ]},
+            {"RP":[
+                {
+                    "courseName": "Health Management & Promotion",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R43",
+                    "2020L1R4": "14 to 26",
+                    "website":"https://www.rp.edu.sg/Shl/full-time-diplomas/Details/diploma-in-health-management-and-promotion",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Health Services Management",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R45",
+                    "2020L1R4": "12 to 26",
+                    "website":"https://www.rp.edu.sg/Shl/full-time-diplomas/Details/diploma-in-health-services-management",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Sport & Exercise Science",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R26",
+                    "2020L1R4": "5 to 14",
+                    "website":"https://www.rp.edu.sg/Shl/full-time-diplomas/Details/diploma-in-sport-and-exercise-science",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Sport Coaching",
+                    "polytechnic":"Republic Polytechnic (RP)",
+                    "polyClass":"RP",
+                    "courseCode": "R49",
+                    "2020L1R4": "13 to 17",
+                    "website":"https://www.rp.edu.sg/Shl/full-time-diplomas/Details/diploma-in-sport-coaching",
+                    "new": "no"
+                }
+            ]}
+        ],
+        "Humanities":[
+            {"SP":[
+                {
+                    "courseName": "Applied Drama & Psychology",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S43",
+                    "2020L1R4": "4 to 10",
+                    "website":"https://www.sp.edu.sg/cass/full-time-courses/diploma-in-applied-drama-psychology",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Creative Writing for Television & New Media",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S41",
+                    "2020L1R4": "4 to 11",
+                    "website":"https://www.sp.edu.sg/cass/full-time-courses/diploma-in-creative-writing-for-tv-and-new-media",
+                    "new": "no"
+                }
+            ]},
+            {"TP":[
+                {
+                    "courseName": "Early Childhood Development & Education",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T68",
+                    "2020L1R4": "6 to 15",
+                    "website":"https://www.tp.edu.sg/schools/hss/early-childhood-development-and-education",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Psychology Studies",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T48",
+                    "2020L1R4": "5 to 8",
+                    "website":"http://www.tp.edu.sg/schools/hss/psychology-studies",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Social Sciences in Gerontology",
+                    "polytechnic":"Temasek Polytechnic (TP)",
+                    "polyClass":"TP",
+                    "courseCode": "T53",
+                    "2020L1R4": "9 to 13",
+                    "website":"https://www.tp.edu.sg/schools/hss/social-sciences-in-gerontology",
+                    "new": "no"
+                }
+            ]},
+            {"NP":[
+                {
+                    "courseName": "Chinese Studies",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N70",
+                    "2020L1R4": "7 to 10",
+                    "website":"https://www.np.edu.sg/hms/Pages/chs.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Community Development ",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N11",
+                    "2020L1R4": "4 to 9",
+                    "website":"https://www.np.edu.sg/hms/Pages/cdt.aspx",
+                    "new": "yes"
+                },
+                {
+                    "courseName": "Early Childhood Development & Education",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N96",
+                    "2020L1R4": "3 to 17",
+                    "website":"https://www.np.edu.sg/hms/Pages/ecde.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Tamil Studies with Early Education",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N95",
+                    "2020L1R4": "11 to 22",
+                    "website":"https://www.np.edu.sg/hms/Pages/tse.aspx",
+                    "new": "no"
+                }
+        ]}
+        ],
+        "InformationDigitalTechnologies":[
+            {"SP":[
+                {
+                    "courseName": "Applied AI & Analytics ",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S30",
+                    "2020L1R4": "3 to 10",
+                    "website":"https://www.sp.edu.sg/soc/courses/full-time-diplomas/data-analytics-and-artificial-intelligence-(ai)",
+                    "new": "yes"
+                },
+                {
+                    "courseName": "Common ICT Programme",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S32",
+                    "2020L1R4": "5 to 12",
+                    "website":"https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-infocomm-technology-programme",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Infocomm Security Management",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S54",
+                    "2020L1R4": "4 to 8",
+                    "website":"https://www.sp.edu.sg/dmit/courses/full-time-diplomas/infocomm-security-management",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Information Technology",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S69",
+                    "2020L1R4": "4 to 14",
+                    "website":"https://www.sp.edu.sg/dmit/courses/full-time-diplomas/information-technology",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Music & Audio Technology",
+                    "polytechnic":"Singapore Polytechnic (SP)",
+                    "polyClass":"SP",
+                    "courseCode": "S97",
+                    "2020L1R4": "3 to 9",
+                    "website":"https://www.sp.edu.sg/dmit/courses/full-time-diplomas/music-audio-technology",
+                    "new": "no"
+                }
+            ]},
+            {"NYP":[
+                {
+                    "courseName": "Business Intelligence & Analytics",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C43",
+                    "2020L1R4": "6 to 14",
+                    "website":"http://www.nyp.edu.sg/schools/sit/full-time-courses/business-intelligence-and-analytics.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Common ICT Programme",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C36",
+                    "2020L1R4": "4 to 15",
+                    "website":"http://www.nyp.edu.sg/schools/sit/full-time-courses/common-ict-programme.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Cybersecurity & Digital Forensics",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C54",
+                    "2020L1R4": "4 to 6",
+                    "website":"http://www.nyp.edu.sg/schools/sit/full-time-courses/cybersecurity-and-digital-forensics.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Game Development & Technology",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C70",
+                    "2020L1R4": "6 to 13",
+                    "website":"http://www.nyp.edu.sg/schools/sidm/full-time-courses/game-development-and-technology.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Infocomm & Security",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C80",
+                    "2020L1R4": "7 to 16",
+                    "website":"http://www.nyp.edu.sg/schools/sit/full-time-courses/infocomm-and-security.html",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Information Technology",
+                    "polytechnic":"Nanyang Polytechnic (NYP)",
+                    "polyClass":"NYP",
+                    "courseCode": "C85",
+                    "2020L1R4": "3 to 14",
+                    "website":"http://www.nyp.edu.sg/schools/sit/full-time-courses/information-technology.html",
+                    "new": "no"
+                }
+        ]},
+
+        {"TP":[
+            {
+                "courseName": "Big Data & Analytics",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T60",
+                "2020L1R4": "4 to 12",
+                "website":"https://www.tp.edu.sg/schools/iit/big-data-and-analytics",
+                "new": "no"
+            },
+            {
+                "courseName": "Common ICT Programme",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T63",
+                "2020L1R4": "6 to 16",
+                "website":"https://www.tp.edu.sg/schools/iit/common-ict-programme",
+                "new": "no"
+            },
+            {
+                "courseName": "Cybersecurity & Digital Forensics",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T62",
+                "2020L1R4": "3 to 9",
+                "website":"https://www.tp.edu.sg/schools/iit/cybersecurity-and-digital-forensics",
+                "new": "no"
+            },
+            {
+                "courseName": "Game Design & Development",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T58",
+                "2020L1R4": "5 to 14",
+                "website":"https://www.tp.edu.sg/schools/iit/game-design-and-development",
+                "new": "no"
+            },
+            {
+                "courseName": "Information Technology",
+                "polytechnic":"Temasek Polytechnic (TP)",
+                "polyClass":"TP",
+                "courseCode": "T30",
+                "2020L1R4": "6 to 16",
+                "website":"https://www.tp.edu.sg/schools/iit/information-technology",
+                "new": "no"
+            }
+        ]},
+        {"NP":
+            [
+                {
+                    "courseName": "Common ICT Programme",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N98",
+                    "2020L1R4": "5 to 11",
+                    "website":"https://www.np.edu.sg/ict/Pages/cictp.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Cybersecurity & Digital Forensics",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N94",
+                    "2020L1R4": "4 to 8",
+                    "website":"https://www.np.edu.sg/ict/Pages/csf.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Financial Informatics",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N81",
+                    "2020L1R4": "4 to 12",
+                    "website":"https://www.np.edu.sg/ict/Pages/fi.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Immersive Media",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N55",
+                    "2020L1R4": "7 to 13",
+                    "website":"https://www.np.edu.sg/ict/Pages/imgd.aspx",
+                    "new": "no"
+                },
+                {
+                    "courseName": "Information Technology",
+                    "polytechnic":"Ngee Ann Polytechnic (NP)",
+                    "polyClass":"NP",
+                    "courseCode": "N54",
+                    "2020L1R4": "5 to 12",
+                    "website":"https://www.np.edu.sg/ict/Pages/it.aspx",
+                    "new": "no"
+                }
+        ]},
+        {"RP":[
+            {
+                "courseName": "Business Information Systems",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R13",
+                "2020L1R4": "16 to 26",
+                "website":"https://www.rp.edu.sg/SOI/full-time-diplomas/Details/diploma-in-business-information-systems",
+                "new": "no"
+            },
+            {
+                "courseName": "Common ICT Programme",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R58",
+                "2020L1R4": "13 to 26",
+                "website":"https://www.rp.edu.sg/SOI/full-time-diplomas/Details/common-ict-programme",
+                "new": "no"
+            },
+            {
+                "courseName": "Digital Design & Development",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R47",
+                "2020L1R4": "18 to 25",
+                "website":"https://www.rp.edu.sg/soi/full-time-diplomas/details/diploma-in-digital-design-and-development",
+                "new": "no"
+            },
+            {
+                "courseName": "Financial Technology",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R18",
+                "2020L1R4": "16 to 25",
+                "website":"hhttps://www.rp.edu.sg/SOI/full-time-diplomas/Details/diploma-in-financial-technology",
+                "new": "no"
+            },
+            {
+                "courseName": "Infocomm Security Management",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R55",
+                "2020L1R4": "8 to 20",
+                "website":"https://www.rp.edu.sg/SOI/full-time-diplomas/Details/diploma-in-infocomm-security-management",
+                "new": "no"
+            },
+            {
+                "courseName": "Information Technology",
+                "polytechnic":"Republic Polytechnic (RP)",
+                "polyClass":"RP",
+                "courseCode": "R12",
+                "2020L1R4": "7 to 26",
+                "website":"https://www.rp.edu.sg/SOI/full-time-diplomas/Details/diploma-in-information-technology",
+                "new": "no"
+            }
+        ]}
+    ],
+    "MarinetimeStudies":[
+        {"SP":[
+            {
+                "courseName": "Marine Engineering",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S63",
+                "2020L1R4": "6 to 22",
+                "website":"https://www.sp.edu.sg/sma/courses/full-time-diplomas/marine-engineering",
+                "new": "no"
+            },
+            {
+                "courseName": "Maritime Business",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S74",
+                "2020L1R4": "7 to 17",
+                "website":"https://www.sp.edu.sg/sma/courses/full-time-diplomas/maritime-business",
+                "new": "no"
+            }
+        ]},
+        {"NP":[
+            {
+                "courseName": "Marine & Offshore Technology",
+                "polytechnic":"Ngee Ann Polytechnic (NP)",
+                "polyClass":"NP",
+                "courseCode": "N42",
+                "2020L1R4": "11 to 18",
+                "website":"https://www.np.edu.sg/soe/Pages/mot.aspx",
+                "new": "no"
+            }
+        ]}
+    ],
+    "MediaDesign":[
+        {"SP":[
+            {
+                "courseName": "Digital Animation",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S35",
+                "2020L1R4": "5 to 8",
+                "website":"https://www.sp.edu.sg/dmit/courses/full-time-diplomas/digital-animation",
+                "new": "no"
+            },
+            {
+                "courseName": "Experience & Communication Design",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S93",
+                "2020L1R4": "6 to 14",
+                "website":"https://www.sp.edu.sg/sd/courses/full-time-diplomas/experience-and-communication-design",
+                "new": "no"
+            },
+            {
+                "courseName": "Games Design & Development",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S56",
+                "2020L1R4": "4 to 11",
+                "website":"https://www.sp.edu.sg/mad/courses/full-time-diplomas/game-design-and-development",
+                "new": "no"
+            },
+            {
+                "courseName": "Interior Design",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S89",
+                "2020L1R4": "7 to 16",
+                "website":"https://www.sp.edu.sg/sd/courses/full-time-diplomas/interior-design",
+                "new": "no"
+            },
+            {
+                "courseName": "Media & Communication",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S86",
+                "2020L1R4": "7 to 12",
+                "website":"hhttps://www.sp.edu.sg/cass/full-time-courses/diploma-in-media-and-communication",
+                "new": "no"
+            },
+            {
+                "courseName": "Visual Effects & Motion Graphics",
+                "polytechnic":"Singapore Polytechnic (SP)",
+                "polyClass":"SP",
+                "courseCode": "S39",
+                "2020L1R4": "8 to 12",
+                "website":"https://www.sp.edu.sg/dmit/courses/full-time-diplomas/visual-effects-motion-graphics",
+                "new": "no"
+            }
+        ]},
+        {"NYP":[
+            {
+                "courseName": "Animation & Visual Effects ",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C33",
+                "2020L1R4": "4 to 11",
+                "website":"https://www.nyp.edu.sg/schools/sidm/full-time-courses/animation_and_visual_effects.html",
+                "new": "yes"
+            },
+            {
+                "courseName": "Digital Game Art & Design",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C60",
+                "2020L1R4": "5 to 12",
+                "website":"http://www.nyp.edu.sg/schools/sidm/full-time-courses/digital-game-art-and-design.html",
+                "new": "no"
+            },
+            {
+                "courseName": "Industrial Design",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C83",
+                "2020L1R4": "5 to 18",
+                "website":"http://www.nyp.edu.sg/schools/sdn/full-time-courses/industrial-design.html",
+                "new": "no"
+            },
+            {
+                "courseName": "Interaction Design",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C59",
+                "2020L1R4": "11 to 18",
+                "website":"http://www.nyp.edu.sg/schools/sidm/full-time-courses/interaction-design.html",
+                "new": "no"
+            },
+            {
+                "courseName": "Motion Graphics Design",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C66",
+                "2020L1R4": "9 to 16",
+                "website":"https://www.nyp.edu.sg/schools/sidm/full-time-courses/motion-graphics-design.html",
+                "new": "no"
+            },
+            {
+                "courseName": "Spatial Design",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C64",
+                "2020L1R4": "9 to 18",
+                "website":"http://www.nyp.edu.sg/schools/sdn/full-time-courses/spatial-design.html",
+                "new": "no"
+            },
+            {
+                "courseName": "Visual Communication",
+                "polytechnic":"Nanyang Polytechnic (NYP)",
+                "polyClass":"NYP",
+                "courseCode": "C63",
+                "2020L1R4": "4 to 16",
+                "website":"http://www.nyp.edu.sg/schools/sdn/full-time-courses/visual-communication.html",
+                "new": "no"
+            }
+    ]
+    },
+    {"TP":[
+        {
+            "courseName": "Apparel Design & Merchandising",
+            "polytechnic":"Temasek Polytechnic (TP)",
+            "polyClass":"TP",
+            "courseCode": "T20",
+            "2020L1R4": "7 to 14",
+            "website":"http://www.tp.edu.sg/schools/des/apparel-design-and-merchandising",
+            "new": "no"
+        },
+        {
+            "courseName": "Communication Design",
+            "polytechnic":"Temasek Polytechnic (TP)",
+            "polyClass":"TP",
+            "courseCode": "T59",
+            "2020L1R4": "5 to 14",
+            "website":"https://www.tp.edu.sg/schools/des/communication-design",
+            "new": "no"
+        },
+        {
+            "courseName": "Digital Film & Television",
+            "polytechnic":"Temasek Polytechnic (TP)",
+            "polyClass":"TP",
+            "courseCode": "T23",
+            "2020L1R4": "8 to 13",
+            "website":"http://www.tp.edu.sg/schools/des/digital-film-and-television",
+            "new": "no"
+        },
+        {
+            "courseName": "Interior Architecture & Design",
+            "polytechnic":"Temasek Polytechnic (TP)",
+            "polyClass":"TP",
+            "courseCode": "T22",
+            "2020L1R4": "4 to 15",
+            "website":"http://www.tp.edu.sg/schools/des/interior-architecture-and-design",
+            "new": "no"
+        },
+        {
+            "courseName": "Product & Industrial Design",
+            "polytechnic":"Temasek Polytechnic (TP)",
+            "polyClass":"TP",
+            "courseCode": "T35",
+            "2020L1R4": "9 to 17",
+            "website":"http://www.tp.edu.sg/schools/des/product-and-industrial-design",
+            "new": "no"
+        }
+    ]},
+    {"NP":[
+        {
+            "courseName": "Chinese Media & Communication",
+            "polytechnic":"Ngee Ann Polytechnic (NP)",
+            "polyClass":"NP",
+            "courseCode": "N88",
+            "2020L1R4": "5 to 12",
+            "website":"https://www.np.edu.sg/hms/Pages/cmc.aspx",
+            "new": "no"
+        },
+        {
+            "courseName": "Design",
+            "polytechnic":"Ngee Ann Polytechnic (NP)",
+            "polyClass":"NP",
+            "courseCode": "N12",
+            "2020L1R4": "8 to 15",
+            "website":"https://www.np.edu.sg/de/Pages/des.aspx",
+            "new": "yes"
+        },
+        {
+            "courseName": "Film, Sound & Video",
+            "polytechnic":"Ngee Ann Polytechnic (NP)",
+            "polyClass":"NP",
+            "courseCode": "N82",
+            "2020L1R4": "4 to 8",
+            "website":"https://www.np.edu.sg/fms/Pages/fsv.aspx",
+            "new": "no"
+        },
+        {
+            "courseName": "Mass Communication",
+            "polytechnic":"Ngee Ann Polytechnic (NP)",
+            "polyClass":"NP",
+            "courseCode": "N67",
+            "2020L1R4": "3 to 8",
+            "website":"https://www.np.edu.sg/fms/Pages/mcm.aspx",
+            "new": "no"
+        },
+        {
+            "courseName": "Media Post-Production",
+            "polytechnic":"Ngee Ann Polytechnic (NP)",
+            "polyClass":"NP",
+            "courseCode": "N13",
+            "2020L1R4": "8 to 12",
+            "website":"https://www.np.edu.sg/fms/Pages/mpp.aspx",
+            "new": "yes"
+        }
+    ]},
+    {"RP":[
+        {
+            "courseName": "Arts & Theatre Management",
+            "polytechnic":"Republic Polytechnic (RP)",
+            "polyClass":"RP",
+            "courseCode": "R25",
+            "2020L1R4": "12 to 20",
+            "website":"https://www.rp.edu.sg/sta/full-time-diplomas/Details/diploma-in-arts-and-theatre-management",
+            "new": "no"
+        },
+        {
+            "courseName": "Design for User Experience",
+            "polytechnic":"Republic Polytechnic (RP)",
+            "polyClass":"RP",
+            "courseCode": "R36",
+            "2020L1R4": "17 to 21",
+            "website":"https://www.rp.edu.sg/sta/full-time-diplomas/Details/diploma-in-design-for-user-experience",
+            "new": "no"
+        },
+        {
+            "courseName": "Game Design",
+            "polytechnic":"Republic Polytechnic (RP)",
+            "polyClass":"RP",
+            "courseCode": "R35",
+            "2020L1R4": "12 to 19",
+            "website":"https://www.rp.edu.sg/STA/full-time-diplomas/Details/diploma-in-game-design",
+            "new": "no"
+        },
+        {
+            "courseName": "Mass Communication",
+            "polytechnic":"Republic Polytechnic (RP)",
+            "polyClass":"RP",
+            "courseCode": "R32",
+            "2020L1R4": "8 to 17",
+            "website":"https://www.rp.edu.sg/SMC/full-time-diplomas/Details/diploma-in-mass-communication",
+            "new": "no"
+        },
+        {
+            "courseName": "Media Production & Design",
+            "polytechnic":"Republic Polytechnic (RP)",
+            "polyClass":"RP",
+            "courseCode": "R19",
+            "2020L1R4": "12 to 20",
+            "website":"https://www.rp.edu.sg/sta/full-time-diplomas/Details/diploma-in-media-production-and-design",
+            "new": "no"
+        },
+        {
+            "courseName": "Sonic Arts",
+            "polytechnic":"Republic Polytechnic (RP)",
+            "polyClass":"RP",
+            "courseCode": "R24",
+            "2020L1R4": "7 to 20",
+            "website":"https://www.rp.edu.sg/sta/full-time-diplomas/Details/diploma-in-sonic-arts",
+            "new": "no"
+        }
+    ]}
+    ]
     }
 }
