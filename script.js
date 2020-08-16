@@ -31,11 +31,13 @@ var navSymbols = document.getElementsByClassName("navSym")
 
     function myFunction() {
         // Declare variables
-        var input, filter, ul, li, a, i, txtValue;
+        var input, filter, ul, li, a, i, txtValue, evnt, evntText, evntTitle, evntDesc, evntDescText;
         input = document.getElementById('searchEvents');
         filter = input.value.toUpperCase();
         ul = document.getElementById("suggestedEvents");
         li = ul.getElementsByTagName('li');
+        disEvents = document.getElementsByClassName("eventDis");
+
       
         // Loop through all list items, and hide those who don't match the search query
         for (i = 0; i < li.length; i++) {
@@ -47,6 +49,30 @@ var navSymbols = document.getElementsByClassName("navSym")
             li[i].style.display = "none";
           }
         }
+        
+
+        
+        for (evnt=0; evnt<disEvents.length; evnt++){
+            evntText=disEvents[evnt].getElementsByClassName("eTitle")[0];
+            evntTitle = evntText.textContent || evntText.innerText;
+            if(evntTitle.toUpperCase().indexOf(filter) > -1){
+                disEvents[evnt].style.display="";
+            }
+            else{
+                disEvents[evnt].style.display="none";
+            }
+        }
+
+       for (evnt=0; evnt<disEvents.length; evnt++){
+        evntDesc=disEvents[evnt].getElementsByClassName("eDesc")[0];
+        evntDescText = evntDesc.textContent || evntDesc.innerText;
+        if(evntDescText.toUpperCase().indexOf(filter) > -1){
+            disEvents[evnt].style.display="";
+        }
+        else{
+            disEvents[evnt].style.display="none";
+        }
+    }
       }
 
 
@@ -136,8 +162,8 @@ $("#suggestedEvents").mouseleave(function(){
                 <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
             </svg>
         </div>
-        <h1 class="eTitle">${response[0].openHouse[oh].eventName}</h1>
-        <h3 class="eDesc">
+        <h1 class="eTitle eText">${response[0].openHouse[oh].eventName}</h1>
+        <h3 class="eDesc eText">
         ${response[0].openHouse[oh].date}<br>
         ${response[0].openHouse[oh].time}<br>
         ${response[0].openHouse[oh].polytechnic}<br>
