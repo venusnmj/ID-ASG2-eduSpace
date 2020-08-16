@@ -86,9 +86,6 @@
          
    
     <div id='map' style='width: 100%; height: 700px;'></div>
-    <div id='menu'></nav>
-
-
 
     <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoib3NzaGl5YSIsImEiOiJjazVvMTlidHQwaGJlM2ZuczRuZzM1dGthIn0.UZrlYGDGjQLfsT-6wyayBg';
@@ -150,7 +147,7 @@ map.addLayer(
 'type': 'fill-extrusion',
 'minzoom': 15,
 'layout': {
-            'visibility': 'none'
+            'visibility': 'visible'
         },
 'paint': {
 'fill-extrusion-color': '#aaa',
@@ -180,36 +177,6 @@ map.addLayer(
 labelLayerId
 );
 });
-
-var toggleableLayerIds = ['3D'];
- 
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-var id = toggleableLayerIds[i];
- 
-var link = document.createElement('a');
-link.href = '#';
-link.className = '';
-link.textContent = id;
- 
-link.onclick = function(e) {
-var clickedLayer = this.textContent;
-e.preventDefault();
-e.stopPropagation();
- 
-var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
- 
-if (visibility === 'visible') {
-map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-this.className = '';
-} else {
-this.className = 'active';
-map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-}
-};
- 
-var layers = document.getElementById('menu');
-layers.appendChild(link);
-};
     </script>
 
 </body>
