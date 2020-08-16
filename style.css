@@ -48,7 +48,8 @@ html, body {
 }
 
 .hamburger :hover{
-    cursor: poin}
+    cursor: pointer;
+}
 
 .rightSide{
     position: relative;
@@ -61,6 +62,11 @@ html, body {
     background-position: center;
 }
 
+.eventRS{
+    background-image: none;
+    background-color: rgb(254,213,193);
+}
+
 .topHalf{
     position: absolute;
     z-index: 1;
@@ -69,7 +75,7 @@ html, body {
     width: 100%;
     transform: translateY(-130px) skewY(8deg);
     transition: transform 1s ease;
-    background-color: rgb(15, 36, 77, 0.7);
+    background-color: rgba(15, 36, 77, 0.7);
 }
 
 .topHalf:hover{
@@ -223,13 +229,14 @@ html, body {
   .homeTitle{
       font-size: 200px;
       z-index: 4;
-      color: white;
+      color: rgb(254,213,193);
   }
 
   .homeDescription{
-      color: black;
+      color: rgb(15, 36, 77);
       z-index: 4;
       top: 500px;
+
   }
 
   .homeOverlay{
