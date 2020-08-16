@@ -170,6 +170,7 @@ html, body {
   .eventDis{
       display: grid;
       grid-template-columns: 1fr 4fr;
+      grid-gap: 5px;
       width: 80%;
       padding-top: 20px;
       padding-bottom: 20px;
