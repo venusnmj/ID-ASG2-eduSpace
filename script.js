@@ -25,9 +25,6 @@ var navAlist = [
 
 var navSymbols = document.getElementsByClassName("navSym")
     var navWords=false;
-    
-
-
 
     function myFunction() {
         // Declare variables
@@ -78,6 +75,67 @@ var navSymbols = document.getElementsByClassName("navSym")
 
 var searching = false;
 
+/*
+var eventsCusList = [];
+
+function transEventItem (eventTitle, eventDescription, eventHeart, eventUpdated, eventStartDay, eventStartMonth){
+    this.eventTitle = eventTitle;
+    this.eventDescription = eventDescription;
+    this.eventHeart = eventHeart;
+    this.eventUpdated = eventUpdated;
+    this.eventStartDay = eventStartDay;
+    this.eventStartMonth = eventStartMonth;
+}
+
+function insertToCustom (eventTitle, eventDescription, eventHeart, eventUpdated, eventStartDay, eventStartMonth){
+    var customList = `<div class="eventDis">
+    <div class="eDates">
+        <h1 class="eDay">${eventStartDay}</h1>
+        <p class="eMonth">${eventStartMonth}</p>
+    </div>
+    <div class="eventInfo">
+<div class="sHeart"> ${eventHeart}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart">
+        <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+    </svg>
+</div>
+<h1 class="eTitle eText">${eventTitle}</h1>
+<h3 class="eDesc eText">${eventDescription}</h3> 
+<div class="sDate">
+    <p class="xsDate">${eventUpdated}</p>
+</div>
+</div>
+    </div>`;
+    return customList;
+}
+
+function submitEvent (){
+    var title = $(this).find(".eTitle").innerText;
+    var description = $(this).find("eDesc").innerText;
+    var heart = $(this).find(".sHeart");
+    var update = $(this).find(".xsDate").innerText;
+    var startDay = $(this).find(".eDay").innerText;
+    var startMonth = $(this).find(".eMonth").innerText;
+    vat newEventItem = new transEventItem(title, description,heart,update, startDay,startMonth)
+    eventsCusList.push(newEventItem);
+    $(".courseSearchMenu").after(insertToCustom(newEventItem.eventTitle, newEventItem.eventDescription, newEventItem.eventHeart, newEventItem.eventUpdated, newEventItem.eventStartDay, newEventItem.eventStartMonth));
+}
+
+function storetoLS (eventname, eventsCusListArr){
+    localStorage.setItem(eventname, JSON.stringify(eventsCusListArr));
+}
+
+function getfromLS (eventName){
+    var tempEvent = JSON.parent(localStorage.getItem(eventName));
+    return tempEvent;
+}
+
+function loadCusListTrans (eventsCusListArr){
+    for (var cl = 0; cl<eventsCusListArr.length; cl++){
+        $(".courseSearchMenu").after(insertToCustom)
+    }
+}
+*/
 
 $(document).ready(function(){
 $(".eduSpaceLogo").hide();
@@ -178,16 +236,21 @@ $("#suggestedEvents").mouseleave(function(){
 
         $(".heart").click(function(){
             if($(this).hasClass("eLiked")){
+                $(this).parent().parent().parent().removeClass("likey");
+                console.log("likey");
                 $(this).removeClass("eLiked");
                 $(this).css("fill", "rgb(228, 185, 182)"); 
             }
             
             else{
+            $(this).parent().parent().parent().addClass("likey");
             $(this).addClass("eLiked");
             console.log("hearto");
             $(this).css("fill", "rgb(209, 116, 109)"); 
             }
 
+            var heartedEvents = document.getElementsByClassName("likey");
+            console.log (heartedEvents);
         });
     
       });
