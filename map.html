@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Destination - Where are you going?</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="jquery-2.1.0.js"></script>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css" type="text/css"/>
+</head>
+<body>
+
+    <style>
+        #menu {
+        background: #fff;
+        border-radius: 3px;
+        width: 20%;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        font-family: 'Open Sans', sans-serif;
+        }
+         
+        #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 3px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        text-align: center;
+        }
+         
+        #menu a:last-child {
+        border: none;
+        }
+         
+        #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+        }
+         
+        #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+        }
+         
+        #menu a.active:hover {
+        background: #3074a4;
+        }
+
+        .mapboxgl-canvas{
+            width: 70vw !important;
+        }
+
+        .mapboxgl-ctrl-top-right{
+            width: 30vw !important;
+        }
+
+        .mapboxgl-ctrl-directions{
+            min-width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            padding: 10px 10px !important;
+        }
+
+        </style>
+         
+   
+    <div id='map' style='width: 100%; height: 700px;'></div>
+    <div id='menu'></nav>
+
+
+
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoib3NzaGl5YSIsImEiOiJjazVvMTlidHQwaGJlM2ZuczRuZzM1dGthIn0.UZrlYGDGjQLfsT-6wyayBg';
+    var bounds = [
+        [103.3420359, 1.1804753], // Southwest coordinates
+        [104.2620359, 1.5004753] // Northeast coordinates
+    ];
+    var map = new mapboxgl.Map({
+    minZoom: 10,
+    maxZoom: 18,
+    maxBounds: bounds,
+    center: [103.8198, 1.3521],
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+
+
+
+    var navCtrl = new mapboxgl.NavigationControl();
+    map.addControl(navCtrl, 'top-left');
+    map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    },
+    trackUserLocation: true,
+}),
+    'top-left'
+);
+    map.addControl(new MapboxDirections({
+    accessToken: mapboxgl.accessToken,
+// limit results to Australia
+    countries: 'sg',
+// further limit results to the geographic bounds representing the region of
+// New South Wales
+    bbox: [103.6920359, 1.1304753, 104.0120359, 1.4504753],
+    mapboxgl: mapboxgl,
+}),
+    'top-right'
+);
+
+
+
+    map.on('load', function() {
+// Insert the layer beneath any symbol layer.
+var layers = map.getStyle().layers;
+var labelLayerId;
+for (var i = 0; i < layers.length; i++) {
+if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+labelLayerId = layers[i].id;
+break;
+}
+}
+map.addLayer(
+{
+'id': '3D',
+'source': 'composite',
+'source-layer': 'building',
+'filter': ['==', 'extrude', 'true'],
+'type': 'fill-extrusion',
+'minzoom': 15,
+'layout': {
+            'visibility': 'none'
+        },
+'paint': {
+'fill-extrusion-color': '#aaa',
+// use an 'interpolate' expression to add a smooth transition effect to the
+// buildings as the user zooms in
+'fill-extrusion-height': [
+'interpolate',
+['linear'],
+['zoom'],
+15,
+0,
+15.05,
+['get', 'height']
+],
+'fill-extrusion-base': [
+'interpolate',
+['linear'],
+['zoom'],
+15,
+0,
+15.05,
+['get', 'min_height']
+],
+'fill-extrusion-opacity': 0.6
+}
+},
+labelLayerId
+);
+});
+
+var toggleableLayerIds = ['3D'];
+ 
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+var id = toggleableLayerIds[i];
+ 
+var link = document.createElement('a');
+link.href = '#';
+link.className = '';
+link.textContent = id;
+ 
+link.onclick = function(e) {
+var clickedLayer = this.textContent;
+e.preventDefault();
+e.stopPropagation();
+ 
+var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+ 
+if (visibility === 'visible') {
+map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+this.className = '';
+} else {
+this.className = 'active';
+map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+}
+};
+ 
+var layers = document.getElementById('menu');
+layers.appendChild(link);
+};
+    </script>
+
+</body>
+</html>
