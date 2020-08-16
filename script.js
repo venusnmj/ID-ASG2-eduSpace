@@ -97,10 +97,10 @@ $("#suggestedEvents").mouseleave(function(){
             //for(var nnw=0; nnw<navsymList.length; nnw++){
             $(".navSym").remove();
             //}
-            $(".nav").append(`<a href="#" class="navSym navSym1"><i class="fas fa-home navSpace"></i></a>
-            <a href="#" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
+            $(".nav").append(`<a href="index.html" class="navSym navSym1"><i class="fas fa-home navSpace"></i></a>
+            <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
             <a href="#" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
-            <a href="#" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
+            <a href="maps.html" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
             <a href="#" class="navSym navSym5"><i class="fas fa-cog navSpace"></i></a>
             <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>`);
             navWords=false;
