@@ -62,10 +62,11 @@ html, body {
     background-position: center;
 }
 
+
 .eventRS{
-    background-image: none;
-    background-color: rgb(254,213,193);
+    background-image: url("images/eventsBG.jpeg");
 }
+
 
 .topHalf{
     position: absolute;
