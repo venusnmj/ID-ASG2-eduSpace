@@ -1,0 +1,250 @@
+{
+    "fullTime":{
+        "AppliedScience":[
+            {"SP":
+                [
+                    {
+                        "courseName": "Applied Chemistry",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S64",
+                        "2020L1R4": "3 to 10",
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/applied-chemistry"
+                    },
+                    {
+                        "courseName": "Biomedical Science",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S98",
+                        "2020L1R4": "3 to 8",
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/biomedical-science"
+                    },
+                    {
+                        "courseName": "Chemical Engineering",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S70",
+                        "2020L1R4": "7 to 13",
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/chemical-engineering"
+                    },
+                    {
+                        "courseName": "Food Science & Technology",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S47",
+                        "2020L1R4": "7 to 13",
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/food-science-technology"
+                    },
+                    {
+                        "courseName": "Perfumery & Cosmetic Science",
+                        "polytechnic":"Singapore Polytechnic (SP)",
+                        "polyClass":"SP",
+                        "courseCode": "S38",
+                        "2020L1R4": "6 to 12",
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/perfumery-cosmetic-science"
+                    }
+                ]
+            },
+            {"NYP":
+                [
+                    {
+                        "courseName": "Biologics & Process Technology",
+                        "polytechnic":"Nanyang Polytechnic (NYP)",
+                        "polyClass":"NYP",
+                        "courseCode": "C49",
+                        "2020L1R4": "9 to 12",
+                        "website":"https://www.sp.edu.sg/cls/courses/full-time-diplomas/perfumery-cosmetic-science"
+                    },
+                    {
+                        "courseName": "Chemical & Pharmaceutical Technology",
+                        "polytechnic":"Nanyang Polytechnic (NYP)",
+                        "polyClass":"NYP",
+                        "courseCode": "C73",
+                        "2020L1R4": "6 to 15",
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-chemical-and-pharmaceutical-technology.html"
+                    },
+                    {
+                        "courseName": "Food Science & Nutrition",
+                        "polytechnic":"Nanyang Polytechnic (NYP)",
+                        "polyClass":"NYP",
+                        "courseCode": "C69",
+                        "2020L1R4": "6 to 13",
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-food-science-and-nutrition.html"
+                    },
+                    {
+                        "courseName": "Medicinal Chemistry",
+                        "polytechnic":"Nanyang Polytechnic (NYP)",
+                        "polyClass":"NYP",
+                        "courseCode": "C45",
+                        "2020L1R4": "6 to 10",
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-medicinal-chemistry.html"
+                    },
+                    {
+                        "courseName": "Pharmaceutical Science",
+                        "polytechnic":"Nanyang Polytechnic (NYP)",
+                        "polyClass":"NYP",
+                        "courseCode": "C65",
+                        "2020L1R4": "5 to 10",
+                        "website":"https://www.nyp.edu.sg/schools/scl/full-time-courses/diploma-in-pharmaceutical-science.html"
+                    }
+                ]
+            },
+            {"TP":
+                [
+                    {
+                        "courseName": "Biomedical Engineering",
+                        "polytechnic":"Temasek Polytechnic (TP)",
+                        "polyClass":"TP",
+                        "courseCode": "T38",
+                        "2020L1R4": "9 to 14",
+                        "website":"https://www.tp.edu.sg/schools/eng/biomedical-engineering"
+                    },
+                    {
+                        "courseName": "Chemical Engineering",
+                        "polytechnic":"Temasek Polytechnic (TP)",
+                        "polyClass":"TP",
+                        "courseCode": "T33",
+                        "2020L1R4": "7 to 15" ,
+                        "website":"https://www.tp.edu.sg/schools/asc/chemical-engineering"
+                    },
+                    {
+                        "courseName": "Food, Nutrition & Culinary Science",
+                        "polytechnic":"Temasek Polytechnic (TP)",
+                        "polyClass":"TP",
+                        "courseCode": "T26",
+                        "2020L1R4": "5 to 15" ,
+                        "website":"https://www.tp.edu.sg/schools/asc/food-nutrition-and-culinary-science"
+                    },
+                    {
+                        "courseName": "Medical Biotechnology",
+                        "polytechnic":"Temasek Polytechnic (TP)",
+                        "polyClass":"TP",
+                        "courseCode": "T64",
+                        "2020L1R4": "5 to 11" ,
+                        "website":"https://www.tp.edu.sg/schools/asc/medical-biotechnology"
+                    },
+                    {
+                        "courseName": "Pharmaceutical Science",
+                        "polytechnic":"Temasek Polytechnic (TP)",
+                        "polyClass":"TP",
+                        "courseCode": "T25",
+                        "2020L1R4": "4 to 11" ,
+                        "website":"https://www.tp.edu.sg/schools/asc/pharmaceutical-science"
+                    },
+                    {
+                        "courseName": "Veterinary Technology",
+                        "polytechnic":"Temasek Polytechnic (TP)",
+                        "polyClass":"TP",
+                        "courseCode": "T45",
+                        "2020L1R4": "3 to 9" ,
+                        "website":"https://www.tp.edu.sg/schools/asc/veterinary-technology"
+                    }
+                ]
+            },
+            {"NP":
+                [
+                    {
+                        "courseName": "Biomedical Science",
+                        "polytechnic":"Ngee Ann Polytechnic (NP)",
+                        "polyClass":"NP",
+                        "courseCode": "N59",
+                        "2020L1R4": "3 to 8",
+                        "website":"https://www.np.edu.sg/lsct/Pages/bms.aspx"
+                    },
+                    {
+                        "courseName": "Chemical & Biomolecular Engineering",
+                        "polytechnic":"Ngee Ann Polytechnic (NP)",
+                        "polyClass":"NP",
+                        "courseCode": "N56",
+                        "2020L1R4": "4 to 11",
+                        "website":"https://www.np.edu.sg/lsct/Pages/cbe.aspx"
+                    },
+                    {
+                        "courseName": "Environmental & Water Technology",
+                        "polytechnic":"Ngee Ann Polytechnic (NP)",
+                        "polyClass":"NP",
+                        "courseCode": "N74",
+                        "2020L1R4": "10 to 14",
+                        "website":"https://www.np.edu.sg/lsct/Pages/ewt.aspx"
+                    },
+                    {
+                        "courseName": "Landscape Design & Horticulture",
+                        "polytechnic":"Ngee Ann Polytechnic (NP)",
+                        "polyClass":"NP",
+                        "courseCode": "N57",
+                        "2020L1R4": "7 to 15",
+                        "website":"https://www.np.edu.sg/lsct/Pages/ldh.aspx"
+                    },
+                    {
+                        "courseName": "Pharmaceutical Science",
+                        "polytechnic":"Ngee Ann Polytechnic (NP)",
+                        "polyClass":"NP",
+                        "courseCode": "N73",
+                        "2020L1R4": "3 to 9",
+                        "website":"https://www.np.edu.sg/lsct/Pages/pharm.aspx"
+                    }
+                ]
+            },
+            {"RP":
+                [
+                    {
+                        "courseName": "Biomedical Science",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R14",
+                        "2020L1R4": "8 to 12",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-biomedical-science"
+                    },
+                    {
+                        "courseName": "Biotechnology",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R16",
+                        "2020L1R4": "11 to 17",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-biotechnology"
+                    },
+                    {
+                        "courseName": "Common Science Programme",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R59",
+                        "2020L1R4": "9 to 19",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/common-science-programme"
+                    },
+                    {
+                        "courseName": "Environmental Science",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R29",
+                        "2020L1R4": "8 to 19",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-environmental-science"
+                    },
+                    {
+                        "courseName": "Marine Science & Aquaculture",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R53",
+                        "2020L1R4": "9 to 13",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-marine-science-and-aquaculture"
+                    },
+                    {
+                        "courseName": "Materials Science",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R17",
+                        "2020L1R4": "7 to 21",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-materials-science"
+                    },
+                    {
+                        "courseName": "Pharmaceutical Science",
+                        "polytechnic":"Republic Polytechnic (RP)",
+                        "polyClass":"RP",
+                        "courseCode": "R22",
+                        "2020L1R4": "11 to 17",
+                        "website":"https://www.rp.edu.sg/SAS/full-time-diplomas/Details/diploma-in-pharmaceutical-science"
+                    }
+                ]
+            }
+        ]
+    }
+}
