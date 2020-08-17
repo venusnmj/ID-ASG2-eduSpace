@@ -28,7 +28,7 @@ var navSymbols = document.getElementsByClassName("navSym")
 
     function myFunction() {
         // Declare variables
-        var input, filter, ul, li, a, i, txtValue, evnt, evntText, evntTitle, evntDesc, evntDescText;
+        var input, filter, ul, li, a, i, txtValue, evnt, evntText, evntTitle, evntDesc, evntDescText, disEvents;
         input = document.getElementById('searchEvents');
         filter = input.value.toUpperCase();
         ul = document.getElementById("suggestedEvents");
@@ -52,28 +52,77 @@ var navSymbols = document.getElementsByClassName("navSym")
         for (evnt=0; evnt<disEvents.length; evnt++){
             evntText=disEvents[evnt].getElementsByClassName("eTitle")[0];
             evntTitle = evntText.textContent || evntText.innerText;
-            if(evntTitle.toUpperCase().indexOf(filter) > -1){
+
+            evntDesc=disEvents[evnt].getElementsByClassName("eDesc")[0];
+            evntDescText = evntDesc.textContent || evntDesc.innerText;
+
+            if(evntTitle.toUpperCase().indexOf(filter) > -1 || evntDescText.toUpperCase().indexOf(filter)>-1){
                 disEvents[evnt].style.display="";
             }
             else{
                 disEvents[evnt].style.display="none";
             }
         }
+      }
 
-       for (evnt=0; evnt<disEvents.length; evnt++){
-        evntDesc=disEvents[evnt].getElementsByClassName("eDesc")[0];
-        evntDescText = evntDesc.textContent || evntDesc.innerText;
-        if(evntDescText.toUpperCase().indexOf(filter) > -1){
-            disEvents[evnt].style.display="";
+
+      function myFunction2() {
+        // Declare variables
+        var cInput, cFilter, cUL, cLI, b, cNo, cpValue, c, cText, cTitle, cDesc, cDescText, disCourse;
+        cInput = document.getElementById('searchCourses');
+        cFilter = cInput.value.toUpperCase();
+        cUL = document.getElementById("suggestedCourses");
+        cLI = cUL.getElementsByTagName('li');
+        disCourse = document.getElementsByClassName("courseDis");
+
+      
+        // Loop through all list items, and hide those who don't match the search query
+        for (c= 0; c < cLI.length; c++) {
+          b = cLI[c].getElementsByTagName("a")[0];
+          cpValue = b.textContent || b.innerText;
+          if (cpValue.toUpperCase().indexOf(cFilter) > -1) {
+            cLI[c].style.display = "";
+          } else {
+            cLI[c].style.display = "none";
+          }
+        }
+        
+
+        
+        for (cNo=0; cNo<disCourse.length; cNo++){
+            cText=disCourse[cNo].getElementsByClassName("cName")[0];
+            cTitle = cText.textContent || cText.innerText;
+
+            cDesc=disCourse[cNo].getElementsByClassName("cDesc")[0];
+            cDescText = cDesc.textContent || cDesc.innerText;
+
+
+            if(cTitle.toUpperCase().indexOf(cFilter) > -1 || cDescText.toUpperCase().indexOf(cFilter)>-1){
+                disCourse[cNo].style.display="";
+            }
+            else{
+                disCourse[cNo].style.display="none";
+            }
+
+            
+        }
+        /*
+       for (cNo=0; cNo<disCourse.length; cNo++){
+        cDesc=disCourse[cNo].getElementsByClassName("cDesc")[0];
+        cDescText = cDesc.textContent || cDesc.innerText;
+        if(cDescText.toUpperCase().indexOf(cFilter) > -1){
+            disCourse[cNo].style.display="";
         }
         else{
-            disEvents[evnt].style.display="none";
+            disCourse[cNo].style.display="none";
         }
     }
+    */
       }
 
 
 var searching = false;
+var searchingC = false;
 
 /*
 var eventsCusList = [];
@@ -154,12 +203,25 @@ $("#searchEvents").blur(function(){
 
 $("#suggestedEvents").mouseenter(function(){
     searching = true;
-    console.log(searching);
+    //console.log(searching);
 });
 $("#suggestedEvents").mouseleave(function(){
     searching = false;
-    console.log(searching);
+    //console.log(searching);
 });
+
+$("#searchCourses").blur(function(){
+    if(searchingC==false){
+        $("#suggestedCourses").hide()
+    }
+});
+
+$("#suggestedCourses").mouseenter(function(){
+    searchingC=true;
+});
+$("#suggestedCourses").mouseleave(function(){
+    searchingC=false;
+})
 
     $(".hamburger").click(function(){
         console.log(navWords)
@@ -233,6 +295,85 @@ $("#suggestedEvents").mouseleave(function(){
             </div>
             </div>`);
         }
+
+        var settingsCourse = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://cors-anywhere.herokuapp.com/https://polytechnicevents-0d18.restdb.io/rest/ft-course",
+            "method": "GET",
+            "headers": {
+              "content-type": "application/json",
+              "x-apikey": "e7bfc793e7a466f05ada0f4e8cd7a93e029e9",
+              "cache-control": "no-cache"
+            }
+          }
+          
+          $.ajax(settingsCourse).done(function (responseC) {
+            for (var apic=0; apic < responseC[0].list.length; apic++){
+                console.log(responseC[0].list[apic]);
+                if (responseC[0].list[apic].new=="yes"){
+                $("#courseSearchMenu").after(`<div class="courseDis">
+                <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
+                <div class="courseInfo">
+                <div class="sHeart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart">
+                    <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+                </svg>
+            </div>
+            <h1 class="cName">${responseC[0].list[apic].courseName} </h1>
+            <h3 class="cDesc">${responseC[0].list[apic].category}<br>
+            ${responseC[0].list[apic].polytechnic}<br>
+            JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
+            ELR2B2: ${responseC[0].list[apic].score}<br>
+            </h3> 
+            <div class="cStatus">
+                <p class="cNew">New</p>
+            </div>
+                </div>
+            </div>`);
+                }
+                else{
+                    $("#courseSearchMenu").after(`<div class="courseDis">
+                <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
+                <div class="courseInfo">
+                <div class="sHeart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart">
+                    <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+                </svg>
+            </div>
+            <h1 class="cName">${responseC[0].list[apic].courseName} </h1>
+            <h3 class="cDesc">${responseC[0].list[apic].category}<br>
+            ${responseC[0].list[apic].polytechnic}<br>
+            JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
+            ELR2B2: ${responseC[0].list[apic].score}<br>
+            </h3> 
+            <div class="cStatus">
+                <p class="cNew"></p>
+            </div>
+                </div>
+            </div>`);
+                }
+            }
+
+            $(".heart").click(function(){
+                if($(this).hasClass("eLiked")){
+                    $(this).parent().parent().parent().removeClass("likey");
+                    console.log("likey");
+                    $(this).removeClass("eLiked");
+                    $(this).css("fill", "rgb(228, 185, 182)"); 
+                }
+                
+                else{
+                $(this).parent().parent().parent().addClass("likey");
+                $(this).addClass("eLiked");
+                console.log("hearto");
+                $(this).css("fill", "rgb(209, 116, 109)"); 
+                }
+    
+                var heartedEvents = document.getElementsByClassName("likey");
+                console.log (heartedEvents);
+            });
+          });
 
         $(".heart").click(function(){
             if($(this).hasClass("eLiked")){
