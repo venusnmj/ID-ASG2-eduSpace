@@ -3,8 +3,8 @@ var navwordList = [
     " Calendar",
     " Courses",
     " Locate",
-    " Settings",
-    " Profile"
+    " My Events",
+    " Custom"
 ];
 var navsymList = [
     "<i class='fas fa-home'></i>",
@@ -190,6 +190,7 @@ $(document).ready(function(){
 $(".eduSpaceLogo").hide();
 
 $("#suggestedEvents").hide();
+$("#suggestedCourses").hide();
 
 $("#searchEvents").focus(function(){
 $("#suggestedEvents").show();
@@ -209,6 +210,10 @@ $("#suggestedEvents").mouseleave(function(){
     searching = false;
     //console.log(searching);
 });
+
+$("#searchCourses").focus(function(){
+    $("#suggestedCourses").show();
+    });
 
 $("#searchCourses").blur(function(){
     if(searchingC==false){
@@ -247,7 +252,7 @@ $("#suggestedCourses").mouseleave(function(){
             <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
             <a href="courses.html" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
             <a href="maps.html" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
-            <a href="#" class="navSym navSym5"><i class="fas fa-cog navSpace"></i></a>
+            <a href="#" class="navSym navSym5"><i class="fas fa-clipboard-list navSpace"></i></a>
             <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>`);
             navWords=false;
             $(".leftNav").css("min-width","2vw");
@@ -312,7 +317,7 @@ $("#suggestedCourses").mouseleave(function(){
             for (var apic=0; apic < responseC[0].list.length; apic++){
                 console.log(responseC[0].list[apic]);
                 if (responseC[0].list[apic].new=="yes"){
-                $("#courseSearchMenu").after(`<div class="courseDis">
+                $("#courseSearchMenu").after(`<div class="courseDis ${responseC[0].list[apic].polyClass}">
                 <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
                 <div class="courseInfo">
                 <div class="sHeart">
@@ -333,7 +338,7 @@ $("#suggestedCourses").mouseleave(function(){
             </div>`);
                 }
                 else{
-                    $("#courseSearchMenu").after(`<div class="courseDis">
+                    $("#courseSearchMenu").after(`<div class="courseDis ${responseC[0].list[apic].polyClass}">
                 <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
                 <div class="courseInfo">
                 <div class="sHeart">
@@ -398,26 +403,31 @@ $("#suggestedCourses").mouseleave(function(){
 
         $(".NPoly").click(function(){
               $(".eventDis").hide();
+              $(".courseDis").hide();
               $(".NP").show();
         });
 
         $(".NYPoly").click(function(){
             $(".eventDis").hide();
+            $(".courseDis").hide();
             $(".NYP").show();
         });
 
         $(".TPoly").click(function(){
             $(".eventDis").hide();
+            $(".courseDis").hide();
             $(".TP").show();
         });
 
         $(".SPoly").click(function(){
             $(".eventDis").hide();
+            $(".courseDis").hide();
             $(".SP").show();
         });
 
         $(".RPoly").click(function(){
             $(".eventDis").hide();
+            $(".courseDis").hide();
             $(".RP").show();
         });
 
