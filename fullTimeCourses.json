@@ -1,6 +1,6 @@
 {
-    "fullTime":{
-        "AppliedScience":[
+    "fullTime":
+        {"AppliedScience":[
             {"SP":
                 [
                     {
@@ -1360,7 +1360,7 @@
                     "new": "no"
                 }
         ]}
-        ],
+        ]},
         "InformationDigitalTechnologies":[
             {"SP":[
                 {
@@ -1618,7 +1618,7 @@
             }
         ]}
     ],
-    "MarinetimeStudies":[
+   "MarinetimeStudies":[
         {"SP":[
             {
                 "courseName": "Marine Engineering",
@@ -1925,5 +1925,4 @@
         }
     ]}
     ]
-    }
 }
