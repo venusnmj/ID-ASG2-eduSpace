@@ -98,7 +98,7 @@ html, body {
 }
 */
 
-#searchEvents{
+#searchEvents, #searchCourses{
     background-image: url('images/calendar.png');
     background-size: 20px;
     background-position: 10px 8px; /* Position the search icon */
@@ -111,14 +111,14 @@ html, body {
     margin-bottom: 12px; /* Add some space below the input */
 }
 
-#suggestedEvents {
+#suggestedEvents, #suggestedCourses {
     /* Remove default list styling */
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  #suggestedEvents li a {
+  #suggestedEvents li a, #suggestedCourses li a{
     width: 100%;
     border: 1px solid #ddd; /* Add a border to all links */
     margin-top: -1px; /* Prevent double borders */
@@ -134,8 +134,11 @@ html, body {
   #suggestedEvents li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
   }
+  #suggestedCourses li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
 
-  #searchMenu{
+  #searchMenu, #courseSearchMenu{
       width: 80%;
       text-align: center;
       display: flex;
@@ -267,3 +270,43 @@ html, body {
   .xsDate{
       color: gray;
   }
+
+  .courseDis {
+      background-color: white;
+      width: 80%;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+  }
+
+  .cName, .cDesc{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 20px;
+  }
+
+  .cDesc{
+      text-align: left;
+  }
+
+  .cStatus {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 20px;
+  }
+
+  .cNew{
+      color: red;
+  }
+
+.polyLogo{
+    height: 200px;
+    width: 200px;
+}
+.polyImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
