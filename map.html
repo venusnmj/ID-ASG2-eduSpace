@@ -11,89 +11,160 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css" type="text/css"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css"/>
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 </head>
 <body>
 
-    <style>
-        .mapboxgl-canvas{
-            width: 70vw !important;
-        }
-
-        .mapboxgl-ctrl-top-right{
-            width: 24vw !important;
-        }
-
-        .mapboxgl-ctrl-top-right .mapboxgl-ctrl-directions{
-            min-width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            padding: 10px 10px !important;
-        }
-
-        </style>
+<style>
+#map, .mapboxgl-control-container{
+    width: 85vw !important;
+    height: 100vh !important;
+}
+#marker{
+    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mapboxgl-popup{
+    max-width: 200px;
+}
+#geo{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#geocoder{
+    width: 20vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#mainInfo{
+  position: fixed;
+  display: none;
+  width: 20vw;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 50px;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  cursor: pointer;
+}
+.info{
+  padding-top: 20px;
+  font-size: 16px;
+  color: rgb(31, 28, 28);
+}
+.card{
+    height: 100px;
+    width: 80%;
+    background-color: rgba(58, 129, 223, 0.753);
+    border-radius: 5%;
+}
+.card p{
+    padding: 10px;
+}
+</style>
          
-    <div class="leftNav">
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
-    <nav class="nav">
-        <a href="index.html" class="navSym navSym1"><i class="fas fa-home navSpace"></i></a>
-        <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
-        <a href="courses.html" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
-        <a href="#" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
-        <a href="#" class="navSym navSym5"><i class="fas fa-cog navSpace"></i></a>
-        <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>
-    </nav>
-    
-    
-    
-    <img src="images/eduspace-logo.png" class="eduSpaceLogo">
+<div class="leftNav">
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+<nav class="nav">
+    <a href="index.html" class="navSym navSym1"><i class="fas fa-home navSpace"></i></a>
+    <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
+    <a href="courses.html" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
+    <a href="#" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
+    <a href="#" class="navSym navSym5"><i class="fas fa-cog navSpace"></i></a>
+    <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>
+</nav>
+
+
+
+<img src="images/eduspace-logo.png" class="eduSpaceLogo">
+</div>
+
+<div id='map'></div>
+
+<div id="geo">
+    <div id="mainInfo" onclick="off()">
+        <p class="info title">Title Text</p>
+        <p class="info sub">Sub Text</p>
+        <p class="info coords">Coords Text</p>
     </div>
+<div id="geocoder" class="geocoder">
+    <p>Locate Me:</p>
+</div>
+<div id="cardLists">
+    <div class="card cardSP">
+        <p class="listsTitle">Singapore Polytechnic</p>
+    </div>
+    <div class="card cardNYP">
+        <p class="listsTitle">Nanyang Polytechnic</p>
+    </div>
+    <div class="card cardTP">
+        <p class="listsTitle">Temasek Polytechnic</p>
+    </div>
+    <div class="card cardNP">
+        <p class="listsTitle">Ngee Ann Polytechnic</p>
+    </div>
+    <div class="card cardRP">
+        <p class="listsTitle">Republic Polytechnic</p>
+    </div>
+</div>
+</div>
 
-    <div id='map' style='width: 100%; height: 100vh;'></div>
+<script>
+function off() {
+  document.getElementById("mainInfo").style.display = "none";
+}
 
-    <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoib3NzaGl5YSIsImEiOiJjazVvMTlidHQwaGJlM2ZuczRuZzM1dGthIn0.UZrlYGDGjQLfsT-6wyayBg';
-    var bounds = [
-        [103.3420359, 1.1804753], // Southwest coordinates
-        [104.2620359, 1.5004753] // Northeast coordinates
-    ];
-    var map = new mapboxgl.Map({
-    minZoom: 11,
-    maxZoom: 18,
-    maxBounds: bounds,
-    center: [103.8198, 1.3521],
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-    });
+mapboxgl.accessToken = 'pk.eyJ1Ijoib3NzaGl5YSIsImEiOiJjazVvMTlidHQwaGJlM2ZuczRuZzM1dGthIn0.UZrlYGDGjQLfsT-6wyayBg';
+var bounds = [
+    [103.3420359, 1.1804753], // Southwest coordinates
+    [104.2620359, 1.5004753] // Northeast coordinates
+];
+var layerIDs = []; // Will contain a list used to filter against.
+var filterInput = document.getElementById('filter-input');
 
+var map = new mapboxgl.Map({
+minZoom: 11,
+maxZoom: 18,
+maxBounds: bounds,
+center: [103.8198, 1.3521],
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
 
-
-    var navCtrl = new mapboxgl.NavigationControl();
-    map.addControl(navCtrl, 'top-left');
-    map.addControl(new mapboxgl.GeolocateControl({
-    positionOptions: {
-        enableHighAccuracy: true
-    },
-    trackUserLocation: true,
-}),
-    'top-left'
-);
-    map.addControl(new MapboxDirections({
-    accessToken: mapboxgl.accessToken,
+var geocoder = new MapboxGeocoder({
+accessToken: mapboxgl.accessToken,
+mapboxgl: mapboxgl,
 // limit results to Australia
-    countries: 'sg',
+countries: 'sg',
 // further limit results to the geographic bounds representing the region of
 // New South Wales
-    bbox: [103.6920359, 1.1304753, 104.0120359, 1.4504753],
-    mapboxgl: mapboxgl,
+bbox: [103.6920359, 1.1304753, 104.0120359, 1.4504753],
+})
+document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+
+var navCtrl = new mapboxgl.NavigationControl();
+map.addControl(navCtrl, 'top-left');
+map.addControl(new mapboxgl.GeolocateControl({
+positionOptions: {
+    enableHighAccuracy: true
+},
+trackUserLocation: true,
 }),
-    'top-right'
+'top-left'
 );
 
-
-
-    map.on('load', function() {
+map.on('load', function() {
 // Insert the layer beneath any symbol layer.
 var layers = map.getStyle().layers;
 var labelLayerId;
@@ -112,8 +183,8 @@ map.addLayer(
 'type': 'fill-extrusion',
 'minzoom': 15,
 'layout': {
-            'visibility': 'visible'
-        },
+        'visibility': 'visible'
+    },
 'paint': {
 'fill-extrusion-color': '#aaa',
 // use an 'interpolate' expression to add a smooth transition effect to the
@@ -159,11 +230,12 @@ map.addSource('points', {
 'geometry': {
 'type': 'Point',
 'coordinates': [
-103.77865,1.31001
+103.7775,1.3098
 ]
 },
 'properties': {
-'title': 'Singapore Polytechnic'
+'title': 'Singapore Polytechnic',
+'description': 'Singapore Polytechnic is a post-secondary education institution in Singapore. Established in 1954, Singapore Polytechnic is the first and oldest polytechnic in Singapore. Wikipedia'
 }
 },
 {
@@ -172,7 +244,7 @@ map.addSource('points', {
 'geometry': {
 'type': 'Point',
 'coordinates': [
-103.84760,1.37984
+103.8489,1.38
 ]
 },
 'properties': {
@@ -185,7 +257,7 @@ map.addSource('points', {
 'geometry': {
 'type': 'Point',
 'coordinates': [
-103.93363,1.34502
+103.93257659999995,1.3467526
 ]
 },
 'properties': {
@@ -197,7 +269,7 @@ map.addSource('points', {
 'type': 'Feature',
 'geometry': {
 'type': 'Point',
-'coordinates': [103.77504,1.33197]
+'coordinates': [103.7744,1.3321]
 },
 'properties': {
 'title': 'Ngee Ann Polytechnic'
@@ -209,7 +281,7 @@ map.addSource('points', {
 'geometry': {
 'type': 'Point',
 'coordinates': [
-103.78535,1.44296
+103.784269,1.447235
 ]
 },
 'properties': {
@@ -219,10 +291,10 @@ map.addSource('points', {
 ]
 }
 });
- 
+
 // Add a symbol layer
 map.addLayer({
-'id': 'points',
+'id': 'polys',
 'type': 'symbol',
 'source': 'points',
 'layout': {
@@ -238,9 +310,49 @@ map.addLayer({
 }
 });
 
+
+//When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'polys', function(e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var title = e.features[0].properties.title;
+var description = e.features[0].properties.description;
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+
+document.getElementById("mainInfo").style.display = "block";
+$(".title").text(title);
+$(".sub").text(description);
+$(".coords").text(coordinates);
+});
+
+// map.on('load', function() {
+// $(".listsTitle").text(title);
+// $(".sub").text(description);
+// $(".coords").text(coordinates);
+// });
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'polys', function() {
+map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'polys', function() {
+map.getCanvas().style.cursor = '';
 });
 });
-    </script>
+});
+</script>
 
 </body>
 </html>
