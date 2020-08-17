@@ -252,8 +252,8 @@ $("#suggestedCourses").mouseleave(function(){
             <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
             <a href="courses.html" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
             <a href="maps.html" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
-            <a href="#" class="navSym navSym5"><i class="fas fa-clipboard-list navSpace"></i></a>
-            <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>`);
+            <a href="myevents.html" class="navSym navSym5"><i class="fas fa-clipboard-list navSpace"></i></a>
+            <a href="customlist" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>`);
             navWords=false;
             $(".leftNav").css("min-width","2vw");
             $(".navSpace").css("padding-right","0px");
