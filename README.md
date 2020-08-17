@@ -12,3 +12,4 @@ Respectively.
 4.	“Locate” allows you to see polytechnics’ location on the map and can help you visualise the distance from your home to the polytechnic
 5.	“My events” shows events that you have liked on the calendar pages
 6.	“Custom” allows you to see your customised list of polytechnic courses that you have liked
+https://venusnmj.github.io/ID-ASG2-eduSpace/ 
