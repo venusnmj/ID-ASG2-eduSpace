@@ -57,33 +57,46 @@
   background-color: rgb(255, 255, 255);
   z-index: 2;
   cursor: pointer;
+  line-height: 15px;
+  margin:0;
+  padding: 0;
 }
 .info{
   padding-top: 20px;
   font-size: 16px;
   color: rgb(31, 28, 28);
 }
+.est, .title{
+    font-weight: bold;
+}
 .card{
-    height: 100px;
+    height: 112px;
     width: 80%;
     background-color: rgba(58, 129, 223, 0.753);
     border-radius: 5%;
+    padding: 0 10px 0 10px;
 }
-.card p{
-    padding: 10px;
+.card .listsTitle{
+    padding-top: 5px;
+}
+.card a{
+    float: right;
+    text-decoration: none;
+    color: rgb(6, 45, 68);
+    font-weight: bold;
 }
 </style>
          
 <div class="leftNav">
     <div class="hamburger"><i class="fas fa-bars"></i></div>
-<nav class="nav">
-    <a href="index.html" class="navSym navSym1"><i class="fas fa-home navSpace"></i></a>
-    <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
-    <a href="courses.html" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
-    <a href="#" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
-    <a href="#" class="navSym navSym5"><i class="fas fa-cog navSpace"></i></a>
-    <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>
-</nav>
+    <nav class="nav">
+        <a href="index.html" class="navSym navSym1"><i class="fas fa-home navSpace"></i></a>
+        <a href="events.html" class="navSym navSym2"><i class="far fa-calendar navSpace"></i></a>
+        <a href="courses.html" class="navSym navSym3"><i class="fas fa-th-list navSpace"></i></a>
+        <a href="map.html" class="navSym navSym4"><i class="fas fa-route navSpace"></i></a>
+        <a href="#" class="navSym navSym5"><i class="fas fa-cog navSpace"></i></a>
+        <a href="#" class="navSym navSym6"><i class="fas fa-user-graduate navSpace"></i></a>
+    </nav>
 
 
 
@@ -94,28 +107,50 @@
 
 <div id="geo">
     <div id="mainInfo" onclick="off()">
-        <p class="info title">Title Text</p>
-        <p class="info sub">Sub Text</p>
-        <p class="info coords">Coords Text</p>
+        <p class="info title"><b>Title Text</b></p>
+        <p class="est">Established Text</p><br>
+
+        <p><b>Schools:</b></p>
+        <p class="info a">A Text</p>
+        <p class="info b">B Text</p>
+        <p class="info c">C Text</p>
+        <p class="info d">D Text</p>
+
+        <p class="info f">F Text</p>
+        <p class="info g">G Text</p>
+        <p class="info h">H Text</p>
+        <p class="info i">I Text</p>
+        <p class="info j">J Text</p>
+        <p class="info k">K Text</p>
     </div>
 <div id="geocoder" class="geocoder">
     <p>Locate Me:</p>
 </div>
 <div id="cardLists">
     <div class="card cardSP">
-        <p class="listsTitle">Singapore Polytechnic</p>
+        <p class="listsTitle"><b>Singapore Polytechnic</b></p>
+        <p>500 Dover Rd, Singapore 139651</p>
+        <a href="https://www.sp.edu.sg/">Enter Website</a>
     </div>
     <div class="card cardNYP">
-        <p class="listsTitle">Nanyang Polytechnic</p>
+        <p class="listsTitle"><b>Nanyang Polytechnic</b></p>
+        <p>180 Ang Mo Kio Ave 8, Singapore 569830</p>
+        <a href="https://www.nyp.edu.sg/">Enter Website</a>
     </div>
     <div class="card cardTP">
-        <p class="listsTitle">Temasek Polytechnic</p>
+        <p class="listsTitle"><b>Temasek Polytechnic</b></p>
+        <p>21 Tampines Ave 1, Singapore 529757</p>
+        <a href="https://www.tp.edu.sg/">Enter Website</a>
     </div>
     <div class="card cardNP">
-        <p class="listsTitle">Ngee Ann Polytechnic</p>
+        <p class="listsTitle"><b>Ngee Ann Polytechnic</b></p>
+        <p>535 Clementi Road, Singapore 599489</p>
+        <a href="https://www.np.edu.sg/Pages/default.aspx">Enter Website</a>
     </div>
     <div class="card cardRP">
-        <p class="listsTitle">Republic Polytechnic</p>
+        <p class="listsTitle"><b>Republic Polytechnic</b></p>
+        <p>9 Woodlands Ave 9, Singapore 738964</p>
+        <a href="https://www.rp.edu.sg/">Enter Website</a>
     </div>
 </div>
 </div>
@@ -235,7 +270,17 @@ map.addSource('points', {
 },
 'properties': {
 'title': 'Singapore Polytechnic',
-'description': 'Singapore Polytechnic is a post-secondary education institution in Singapore. Established in 1954, Singapore Polytechnic is the first and oldest polytechnic in Singapore. Wikipedia'
+'established': 'Established on 1954',
+'a': 'Architecture and the Built Environment',
+'b': 'Business',
+'c': 'Computing',
+'d': 'Chemical & Life Sciences',
+'f': 'Electrical and Electronic Engineering',
+'g': 'Life Skills & Communication',
+'h': 'Mathematics and Science',
+'i': 'Media, Arts & Design',
+'j': 'Mechanical and Aeronautical Engineering',
+'k': 'Singapore Maritime Academy'
 }
 },
 {
@@ -248,7 +293,18 @@ map.addSource('points', {
 ]
 },
 'properties': {
-'title': 'Nanyang Polytechnic'
+'title': 'Nanyang Polytechnic',
+'established': 'Established on 1992',
+'a': 'School of Business Management',
+'b': 'School of Chemical & Life Sciences',
+'c': 'School of Design',
+'d': 'School of Engineering',
+'f': 'School of Health & Social Sciences',
+'g': 'School of Information Technology',
+'h': 'School of Interactive & Digital Media',
+'i': 'Foundation & General Studies',
+'j': '',
+'k': ''
 }
 },
 {
@@ -261,7 +317,18 @@ map.addSource('points', {
 ]
 },
 'properties': {
-'title': 'Temasek Polytechnic'
+'title': 'Temasek Polytechnic',
+'established': 'Established on 1990',
+'a': 'School of Applied Science',
+'b': 'School of Business',
+'c': 'School of Design',
+'d': 'School of Engineering',
+'f': 'School of Humanities & Social Sciences',
+'g': 'School of Informatics & IT',
+'h': 'Centre for Foundation Studies',
+'i': '',
+'j': '',
+'k': ''
 }
 },
 {
@@ -272,7 +339,18 @@ map.addSource('points', {
 'coordinates': [103.7744,1.3321]
 },
 'properties': {
-'title': 'Ngee Ann Polytechnic'
+'title': 'Ngee Ann Polytechnic',
+'established': 'Established on 1963',
+'a': 'Business & Accountancy',
+'b': 'Design & Environment',
+'c': 'Engineering',
+'d': 'Flim & Media Studies',
+'f': 'Humanities & Social Sciences',
+'g': 'InfoComm Technology',
+'h': 'Interdisciplinary Studies',
+'i': 'Life Sciences & Chemical Technology',
+'j': '',
+'k': ''
 }
 },
 {
@@ -285,7 +363,18 @@ map.addSource('points', {
 ]
 },
 'properties': {
-'title': 'Republic Polytechnic'
+'title': 'Republic Polytechnic',
+'established': 'Established on 2002',
+'a': 'School of Applied Science',
+'b': 'School of Engineering',
+'c': 'School of Hospitality',
+'d': 'School of Infocomm',
+'f': 'School of Management and Communication',
+'g': 'School of Sports, Health and Leisure',
+'h': 'School of Technology for the Arts',
+'i': '',
+'j': '',
+'k': ''
 }
 }
 ]
@@ -316,7 +405,18 @@ map.addLayer({
 map.on('click', 'polys', function(e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var title = e.features[0].properties.title;
-var description = e.features[0].properties.description;
+var est = e.features[0].properties.established;
+var a = e.features[0].properties.a;
+var b = e.features[0].properties.b;
+var c = e.features[0].properties.c;
+var d = e.features[0].properties.d;
+
+var f = e.features[0].properties.f;
+var g = e.features[0].properties.g;
+var h = e.features[0].properties.h;
+var i = e.features[0].properties.i;
+var j = e.features[0].properties.j;
+var k = e.features[0].properties.k;
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears
 // over the copy being pointed to.
@@ -324,15 +424,25 @@ while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
 coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 }
 
-new mapboxgl.Popup()
-.setLngLat(coordinates)
-.setHTML(description)
-.addTo(map);
+// new mapboxgl.Popup()
+// .setLngLat(coordinates)
+// .setHTML(est)
+// .addTo(map);
 
 document.getElementById("mainInfo").style.display = "block";
 $(".title").text(title);
-$(".sub").text(description);
-$(".coords").text(coordinates);
+$(".est").text(est);
+$(".a").text(a);
+$(".b").text(b);
+$(".c").text(c);
+$(".d").text(d);
+
+$(".f").text(f);
+$(".g").text(g);
+$(".h").text(h);
+$(".i").text(i);
+$(".j").text(j);
+$(".k").text(k);
 });
 
 // map.on('load', function() {
