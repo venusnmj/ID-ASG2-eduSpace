@@ -123,6 +123,12 @@ var navSymbols = document.getElementsByClassName("navSym")
 
 var searching = false;
 var searchingC = false;
+var allEvents = ["TP Open House 2020",
+"SP Open House 2020",
+"RP Open House 2020",
+"Night Open House 2020",
+"NYP Open House 2020",
+"NP Open House 2020"];
 
 var settingsCourse = {
     "async": true,
@@ -146,6 +152,11 @@ var settingsCourse = {
   }
 
   var eventLiked = [];
+  var eventItem = [];
+
+  function addEventItem (myeventName){
+      this.myeventName = myeventName;
+  }
 
 /*
 var eventsCusList = [];
@@ -291,6 +302,14 @@ $("#suggestedCourses").mouseleave(function(){
     
 
       $.ajax(settings).done(function (response) {
+        allEvents = ["TP Open House 2020",
+"SP Open House 2020",
+"RP Open House 2020",
+"Night Open House 2020",
+"NYP Open House 2020",
+"NP Open House 2020"];
+        if(localStorage.getItem("eventTransaction")==null || localStorage.getItem("eventTransaction")=="[]"){
+            
         for (var oh=0; oh<response[0].openHouse.length; oh++){
             $("#searchMenu").after(`<div class="eventDis ${response[0].openHouse[oh].polyClass}">
             <div class="eDates">
@@ -316,27 +335,231 @@ $("#suggestedCourses").mouseleave(function(){
             </div>
             </div>`);
         }
+
         $(".heart").click(function(){
+            /*
             if($(this).hasClass("eLiked")){
                 $(this).parent().parent().parent().removeClass("likey");
                 $(this).removeClass("eLiked");
                 $(this).css("fill", "rgb(228, 185, 182)"); 
-            }
-            
+            }*/
+            /*
             else{
             $(this).parent().parent().parent().addClass("likey");
             $(this).addClass("eLiked");
             console.log("hearto");
             $(this).css("fill", "rgb(209, 116, 109)"); 
-            }
+            }*/
 
             //var heartedEvents = document.getElementsByClassName("likey");
             //console.log (heartedEvents);
             if ($(this).parent().parent().hasClass("eventInfo")){
-                console.log($(this).parent().parent().children(".eTitle").text());
+                if($(this).hasClass("eLiked")){
+                $(this).css("fill", "rgb(228, 185, 182)"); 
+                console.log(eventItem.length);
+                for(var en=0; en<eventItem.length; en++){
+                    if($(this).parent().parent().children(".eTitle").text()==eventItem[en].myeventName){
+                        console.log("help");
+                        eventItem.splice(en,1);
+                        console.log(eventItem + "removed");
+                        
+                    }
+                }
+                $(this).parent().parent().parent().removeClass("likey");
+                $(this).removeClass("eLiked");
+                }
+                /*
+                else{
+                for (var el=0; el<eventLiked.length; el++){
+                    if($(this).parent().parent().children(".eTitle").text()==eventLiked[el]){
+                        eventLiked.splice(el,1);
+                        console.log(eventLiked);
+                    }
+                }*/
+                else{
+                    
+            console.log("hearto");
+            $(this).css("fill", "rgb(209, 116, 109)"); 
+
+                    eventLiked.push($(this).parent().parent().children(".eTitle").text());
+                var newEventItem = new addEventItem($(this).parent().parent().children(".eTitle").text());
+                console.log (newEventItem);
+                console.log(eventItem);
+                    eventItem.push(newEventItem);
+                    console.log(eventItem + "added");
+
+
+                $(this).parent().parent().parent().addClass("likey");
+            $(this).addClass("eLiked");
             }
+
+                }
+                console.log("set2");
+                localStorage.setItem("eventTransaction", JSON.stringify(eventItem));
             
         });
+
+
+
+
+        }
+        else{
+            eventItem=JSON.parse(localStorage.getItem("eventTransaction"));
+
+
+for (var oh=0; oh<response[0].openHouse.length; oh++){
+
+
+            for(var tl=0; tl<eventItem.length; tl++){
+
+                
+                
+                    if (eventItem[tl].myeventName==response[0].openHouse[oh].eventName){
+                    $("#searchMenu").after(`<div class="eventDis ${response[0].openHouse[oh].polyClass}">
+            <div class="eDates">
+                <h1 class="eDay"> ${response[0].openHouse[oh].startDate} </h1>
+                <p class="eMonth">${response[0].openHouse[oh].startMonth}</p>
+            </div>
+            <div class="eventInfo">
+        <div class="sHeart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart eLiked">
+                <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+            </svg>
+        </div>
+        <h1 class="eTitle eText">${response[0].openHouse[oh].eventName}</h1>
+        <h3 class="eDesc eText">
+        ${response[0].openHouse[oh].date}<br>
+        ${response[0].openHouse[oh].time}<br>
+        ${response[0].openHouse[oh].polytechnic}<br>
+        ${response[0].openHouse[oh].address}<br>
+        <a href="${response[0].openHouse[oh].website}">${response[0].openHouse[oh].website}</a></h3>
+        <div class="sDate">
+            <p class="xsDate">${response[0].openHouse[oh].addedDate}</p>
+        </div>
+            </div>
+            </div>`);
+
+            }    
+            //console.log(allEvents);
+        }
+       
+            } 
+
+            for(oh=0; oh<response[0].openHouse.length;oh++){
+                for(tl=0; tl<eventItem.length; tl++){
+            console.log(eventItem[tl].myeventName);
+            console.log(allEvents[oh]);
+            if(eventItem[tl].myeventName==allEvents[oh]){
+            console.log(allEvents);
+            allEvents.splice(oh,1);
+            console.log(allEvents);
+            }
+        }
+        }
+            
+            for(oh=0; oh<response[0].openHouse.length;oh++){
+                for (var ae=0; ae<allEvents.length; ae++){
+            //console.log(allEvents[ae]);
+
+            if(allEvents[ae]==response[0].openHouse[oh].eventName){
+                    $("#searchMenu").after(`<div class="eventDis ${response[0].openHouse[oh].polyClass}">
+                    <div class="eDates">
+                        <h1 class="eDay"> ${response[0].openHouse[oh].startDate} </h1>
+                        <p class="eMonth">${response[0].openHouse[oh].startMonth}</p>
+                    </div>
+                    <div class="eventInfo">
+                <div class="sHeart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart">
+                        <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+                    </svg>
+                </div>
+                <h1 class="eTitle eText">${response[0].openHouse[oh].eventName}</h1>
+                <h3 class="eDesc eText">
+                ${response[0].openHouse[oh].date}<br>
+                ${response[0].openHouse[oh].time}<br>
+                ${response[0].openHouse[oh].polytechnic}<br>
+                ${response[0].openHouse[oh].address}<br>
+                <a href="${response[0].openHouse[oh].website}">${response[0].openHouse[oh].website}</a></h3>
+                <div class="sDate">
+                    <p class="xsDate">${response[0].openHouse[oh].addedDate}</p>
+                </div>
+                    </div>
+                    </div>`);
+        }
+    }
+        }
+            
+  
+
+$(".heart").click(function(){
+    console.log(eventItem);
+
+
+    if ($(this).parent().parent().hasClass("eventInfo")){
+        
+        if($(this).hasClass("eLiked")){
+            
+            console.log("plan to remove " + eventItem.length);
+        $(this).css("fill", "rgb(228, 185, 182)"); 
+        for(var en=0; en<eventItem.length; en++){
+            console.log(eventItem[en].myeventName + $(this).parent().parent().children(".eTitle").text());
+        if($(this).parent().parent().children(".eTitle").text()==eventItem[en].myeventName){
+        
+                eventItem.splice(en,1);
+                console.log(eventItem + "removed");
+                
+            }
+        }
+$(this).parent().parent().parent().removeClass("likey");
+        $(this).removeClass("eLiked");
+        }
+        /*
+        else{
+        for (var el=0; el<eventLiked.length; el++){
+            if($(this).parent().parent().children(".eTitle").text()==eventLiked[el]){
+                eventLiked.splice(el,1);
+                console.log(eventLiked);
+            }
+        }*/
+        else{
+    console.log("hearto");
+    $(this).css("fill", "rgb(209, 116, 109)"); 
+            eventLiked.push($(this).parent().parent().children(".eTitle").text());
+        var newEventItem = new addEventItem($(this).parent().parent().children(".eTitle").text());
+
+        eventItem.push(newEventItem);
+        console.log(eventItem + "added");
+
+
+        $(this).parent().parent().parent().addClass("likey");
+    $(this).addClass("eLiked");
+    }
+
+        }
+        console.log("set1");
+        localStorage.setItem("eventTransaction", JSON.stringify(eventItem));
+
+
+
+
+/*
+                if($(this).hasClass("eLiked")){
+                    for(tl=0; tl<eventItem.length; tl++){
+                        //console.log(eventItem);
+                    if($(this).parent().parent().children(".eTitle").text()==eventItem[tl].myeventName){
+                        console.log("remove");
+                        eventItem.splice(tl,1);
+                        console.log(eventItem);
+                        localStorage.setItem("eventTransaction", JSON.stringify(eventItem));
+                    }
+
+                }
+            }*/
+            });
+            
+        }
+
+
     
       });
 
@@ -440,7 +663,6 @@ $("#suggestedCourses").mouseleave(function(){
             $(".RP").show();
         });
 
-        
 
 
 
