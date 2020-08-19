@@ -108,20 +108,14 @@
 <div id="geo">
     <div id="mainInfo" onclick="off()">
         <p class="info title"><b>Title Text</b></p>
-        <p class="est">Established Text</p><br>
-
-        <p><b>Schools:</b></p>
         <p class="info a">A Text</p>
+        <br>
+        <p><b>Getting There:</b></p>
+        <p><b>By Public Transport</b></p>
         <p class="info b">B Text</p>
+        <br>
+        <p><b>By Driving</b></p>
         <p class="info c">C Text</p>
-        <p class="info d">D Text</p>
-
-        <p class="info f">F Text</p>
-        <p class="info g">G Text</p>
-        <p class="info h">H Text</p>
-        <p class="info i">I Text</p>
-        <p class="info j">J Text</p>
-        <p class="info k">K Text</p>
     </div>
 <div id="geocoder" class="geocoder">
     <p>Enter Your Location:</p>
@@ -271,16 +265,9 @@ map.addSource('points', {
 'properties': {
 'title': 'Singapore Polytechnic',
 'established': 'Established on 1954',
-'a': 'Architecture and the Built Environment',
-'b': 'Business',
-'c': 'Computing',
-'d': 'Chemical & Life Sciences',
-'f': 'Electrical and Electronic Engineering',
-'g': 'Life Skills & Communication',
-'h': 'Mathematics and Science',
-'i': 'Media, Arts & Design',
-'j': 'Mechanical and Aeronautical Engineering',
-'k': 'Singapore Maritime Academy'
+'a': '500 Dover Road Singapore 139651',
+'b': 'Dover Mrt or Bus 14, 33, 74, 74e, 105, 106, 147, 166, 185, 196, NR5, NR8',
+'c': 'AYE from the East to Dover Road or AYE from the West to Dover Road.'
 }
 },
 {
@@ -295,16 +282,9 @@ map.addSource('points', {
 'properties': {
 'title': 'Nanyang Polytechnic',
 'established': 'Established on 1992',
-'a': 'School of Business Management',
-'b': 'School of Chemical & Life Sciences',
-'c': 'School of Design',
-'d': 'School of Engineering',
-'f': 'School of Health & Social Sciences',
-'g': 'School of Information Technology',
-'h': 'School of Interactive & Digital Media',
-'i': 'Foundation & General Studies',
-'j': '',
-'k': ''
+'a': '180 Ang Mo Kio Avenue 8 Singapore 569830',
+'b': 'Bus 45, 50, 86, 128, 159, 265, 851, 853, NR1',
+'c': 'Along Ang Mo Kio Avenue 5 (opposite Anderson Secondary School) and Avenue 9 (after the Ang Mo Kio Police Station and Ang Mo Kio Street 65).'
 }
 },
 {
@@ -319,16 +299,9 @@ map.addSource('points', {
 'properties': {
 'title': 'Temasek Polytechnic',
 'established': 'Established on 1990',
-'a': 'School of Applied Science',
-'b': 'School of Business',
-'c': 'School of Design',
-'d': 'School of Engineering',
-'f': 'School of Humanities & Social Sciences',
-'g': 'School of Informatics & IT',
-'h': 'Centre for Foundation Studies',
-'i': '',
-'j': '',
-'k': ''
+'a': '21 Tampines Ave 1, Singapore 529757',
+'b': 'Tampines Mrt or Bedok Mrt, Bus 8, 15, 23, 69, 118, 129, 518',
+'c': 'PIE, ECP or TPE towards Simei Avenue',
 }
 },
 {
@@ -341,16 +314,9 @@ map.addSource('points', {
 'properties': {
 'title': 'Ngee Ann Polytechnic',
 'established': 'Established on 1963',
-'a': 'Business & Accountancy',
-'b': 'Design & Environment',
-'c': 'Engineering',
-'d': 'Flim & Media Studies',
-'f': 'Humanities & Social Sciences',
-'g': 'InfoComm Technology',
-'h': 'Interdisciplinary Studies',
-'i': 'Life Sciences & Chemical Technology',
-'j': '',
-'k': ''
+'a': '535 Clementi Road, Singapore 599489',
+'b': 'Bus 52, 61, 74, 75, 151, 154, 184',
+'c': 'Clementi Road or Upper Bukit Timah Road exiting towards PIE Tuas'
 }
 },
 {
@@ -365,16 +331,9 @@ map.addSource('points', {
 'properties': {
 'title': 'Republic Polytechnic',
 'established': 'Established on 2002',
-'a': 'School of Applied Science',
-'b': 'School of Engineering',
-'c': 'School of Hospitality',
-'d': 'School of Infocomm',
-'f': 'School of Management and Communication',
-'g': 'School of Sports, Health and Leisure',
-'h': 'School of Technology for the Arts',
-'i': '',
-'j': '',
-'k': ''
+'a': '9 Woodlands Avenue 9, Singapore 738964',
+'b': 'Woodlands Mrt or Bus 169, 902, 903',
+'c': 'Woodlands Ave 2 turns right into Woodlands Ave 9 and turn left into Republic Polytechnic'
 }
 }
 ]
@@ -409,14 +368,6 @@ var est = e.features[0].properties.established;
 var a = e.features[0].properties.a;
 var b = e.features[0].properties.b;
 var c = e.features[0].properties.c;
-var d = e.features[0].properties.d;
-
-var f = e.features[0].properties.f;
-var g = e.features[0].properties.g;
-var h = e.features[0].properties.h;
-var i = e.features[0].properties.i;
-var j = e.features[0].properties.j;
-var k = e.features[0].properties.k;
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears
 // over the copy being pointed to.
@@ -435,14 +386,6 @@ $(".est").text(est);
 $(".a").text(a);
 $(".b").text(b);
 $(".c").text(c);
-$(".d").text(d);
-
-$(".f").text(f);
-$(".g").text(g);
-$(".h").text(h);
-$(".i").text(i);
-$(".j").text(j);
-$(".k").text(k);
 });
 
 // map.on('load', function() {
