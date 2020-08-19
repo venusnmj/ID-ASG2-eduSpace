@@ -264,6 +264,10 @@ html, body {
     fill: rgb(209, 116, 109);
 }
 
+.eLiked{
+    fill: rgb(209, 116, 109);
+}
+
   .eventsPage{
       width: 100%;
       display: flex;
