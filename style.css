@@ -379,3 +379,8 @@ font-family: 'Raleway', sans-serif;
 .landing{
     color: #FADB97;
 }
+
+.header{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
