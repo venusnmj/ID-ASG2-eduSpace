@@ -124,6 +124,29 @@ var navSymbols = document.getElementsByClassName("navSym")
 var searching = false;
 var searchingC = false;
 
+var settingsCourse = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://cors-anywhere.herokuapp.com/https://polytechnicevents-0d18.restdb.io/rest/ft-course",
+    "method": "GET",
+    "headers": {
+      "content-type": "application/json",
+      "x-apikey": "e7bfc793e7a466f05ada0f4e8cd7a93e029e9",
+      "cache-control": "no-cache"
+    }
+  }
+
+  var settings = {
+    "url": "https://cors-anywhere.herokuapp.com/https://polytechnicevents-0d18.restdb.io/rest/events-poly",
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+      "x-apikey": "e7bfc793e7a466f05ada0f4e8cd7a93e029e9"
+    }
+  }
+
+  var eventLiked = [];
+
 /*
 var eventsCusList = [];
 
@@ -229,7 +252,7 @@ $("#suggestedCourses").mouseleave(function(){
 })
 
     $(".hamburger").click(function(){
-        console.log(navWords)
+        //console.log(navWords)
         if(navWords==false){
             for(var nw=0; nw<navwordList.length; nw++){
                 navSymbols[nw].append(navwordList[nw]);
@@ -265,14 +288,7 @@ $("#suggestedCourses").mouseleave(function(){
         
     });
 
-    var settings = {
-        "url": "https://cors-anywhere.herokuapp.com/https://polytechnicevents-0d18.restdb.io/rest/events-poly",
-        "method": "GET",
-        "timeout": 0,
-        "headers": {
-          "x-apikey": "e7bfc793e7a466f05ada0f4e8cd7a93e029e9"
-        },
-      };
+    
 
       $.ajax(settings).done(function (response) {
         for (var oh=0; oh<response[0].openHouse.length; oh++){
@@ -300,22 +316,34 @@ $("#suggestedCourses").mouseleave(function(){
             </div>
             </div>`);
         }
-
-        var settingsCourse = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://cors-anywhere.herokuapp.com/https://polytechnicevents-0d18.restdb.io/rest/ft-course",
-            "method": "GET",
-            "headers": {
-              "content-type": "application/json",
-              "x-apikey": "e7bfc793e7a466f05ada0f4e8cd7a93e029e9",
-              "cache-control": "no-cache"
+        $(".heart").click(function(){
+            if($(this).hasClass("eLiked")){
+                $(this).parent().parent().parent().removeClass("likey");
+                $(this).removeClass("eLiked");
+                $(this).css("fill", "rgb(228, 185, 182)"); 
             }
-          }
+            
+            else{
+            $(this).parent().parent().parent().addClass("likey");
+            $(this).addClass("eLiked");
+            console.log("hearto");
+            $(this).css("fill", "rgb(209, 116, 109)"); 
+            }
+
+            //var heartedEvents = document.getElementsByClassName("likey");
+            //console.log (heartedEvents);
+            if ($(this).parent().parent().hasClass("eventInfo")){
+                console.log($(this).parent().parent().children(".eTitle").text());
+            }
+            
+        });
+    
+      });
+
           
           $.ajax(settingsCourse).done(function (responseC) {
             for (var apic=0; apic < responseC[0].list.length; apic++){
-                console.log(responseC[0].list[apic]);
+                //console.log(responseC[0].list[apic]);
                 if (responseC[0].list[apic].new=="yes"){
                 $("#courseSearchMenu").after(`<div class="courseDis ${responseC[0].list[apic].polyClass}">
                 <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
@@ -360,6 +388,7 @@ $("#suggestedCourses").mouseleave(function(){
                 }
             }
 
+            /*
             $(".heart").click(function(){
                 if($(this).hasClass("eLiked")){
                     $(this).parent().parent().parent().removeClass("likey");
@@ -375,31 +404,11 @@ $("#suggestedCourses").mouseleave(function(){
                 $(this).css("fill", "rgb(209, 116, 109)"); 
                 }
     
-                var heartedEvents = document.getElementsByClassName("likey");
-                console.log (heartedEvents);
-            });
+                //var heartedEvents = document.getElementsByClassName("likey");
+                //console.log(heartedEvents);
+            });*/
           });
 
-        $(".heart").click(function(){
-            if($(this).hasClass("eLiked")){
-                $(this).parent().parent().parent().removeClass("likey");
-                console.log("likey");
-                $(this).removeClass("eLiked");
-                $(this).css("fill", "rgb(228, 185, 182)"); 
-            }
-            
-            else{
-            $(this).parent().parent().parent().addClass("likey");
-            $(this).addClass("eLiked");
-            console.log("hearto");
-            $(this).css("fill", "rgb(209, 116, 109)"); 
-            }
-
-            var heartedEvents = document.getElementsByClassName("likey");
-            console.log (heartedEvents);
-        });
-    
-      });
 
         $(".NPoly").click(function(){
               $(".eventDis").hide();
