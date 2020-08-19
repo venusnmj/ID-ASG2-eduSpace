@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
 
 html, body {
     margin: 0px;
@@ -6,6 +7,7 @@ html, body {
     display: flex;
     flex-wrap: nowrap;
     width: 100vw;
+font-family: 'Raleway', sans-serif;
 }
 
 
@@ -20,6 +22,7 @@ html, body {
     text-align: left;
     z-index: 3;
     position: fixed;
+    height: 100vh;
 }
 
 .nav {
@@ -84,49 +87,34 @@ html, body {
     transform: translateY(-130px) skewY(3deg);;
 } 
 
-/*
-.topText{
-    position: absolute;
-    z-index: 2;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    width: 70vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-*/
 
 #searchEvents, #searchbarMy{
     background-image: url('images/calendar.png');
     background-size: 20px;
-    background-position: 10px 8px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    /*padding: 12px 20px 12px 40px;*/ 
+    background-position: 10px 8px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
     padding: 12px 0px 12px 40px;
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
 }
 
 #searchCourses, #searchCust{
     background-image: url('images/mag.png');
     background-size: 20px;
-    background-position: 10px 8px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    /*padding: 12px 20px 12px 40px;*/ 
+    background-position: 10px 8px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
+
     padding: 12px 0px 12px 40px;
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
 }
 
 #suggestedEvents, #suggestedCourses, #suggestPolyCust, #suggestedMyPoly {
-    /* Remove default list styling */
+    
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -134,29 +122,29 @@ html, body {
   
   #suggestedEvents li a, #suggestedCourses li a, #suggestPolyCust li a, #suggestedMyPoly li a {
     width: 100%;
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    background-color: #f6f6f6; 
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: black; 
+    display: block; 
     text-align: left;
   }
   
   #suggestedEvents li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+    background-color: #eee; /* Add a hover effect*/
   }
   #suggestedCourses li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+    background-color: #eee; /* Add a hover effect */
   }
   #suggestPolyCust li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+    background-color: #eee; /* Add a hover effect  */
   }
 
   #suggestedMyPoly li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+    background-color: #eee; /* Add a hover effect  */
   }
 
   #searchMenu, #courseSearchMenu, #custListSearch, #searchMy{
@@ -164,7 +152,6 @@ html, body {
       text-align: center;
       display: flex;
       flex-direction: column;
-      /*align-items: center;*/
   }
 
   .eDates {
@@ -179,15 +166,17 @@ html, body {
       justify-content: center;
   }
   .myeDates {
-    background-image: url("images/calendar.png");
+    background-image: url("images/calendar2.png");
     background-repeat: no-repeat;
-    background-size: 20vh;
-    height: 21vh;
-    width: 20vh;
+    background-size: 25vh;
+    height: 25vh;
+    width: 25vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin-top: 20px;
+    align-content: center;
 }
 
   .eDay{
@@ -268,6 +257,10 @@ html, body {
     fill: rgb(209, 116, 109);
 }
 
+.cLiked{
+    fill: rgb(209, 116, 109);
+}
+
   .eventsPage{
       width: 100%;
       display: flex;
@@ -314,6 +307,7 @@ html, body {
   .eTitle{
       padding:2px;
       margin: 0px;
+      font-family: 'Playfair Display', serif;
   }
 
   .eDesc{
@@ -334,14 +328,19 @@ html, body {
       grid-template-columns: 1fr 4fr;
   }
 
-  .cName, .cDesc{
+  .cName{
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       padding-left: 20px;
+      font-family: 'Playfair Display', serif;
   }
 
   .cDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
       text-align: left;
   }
 
@@ -375,4 +374,8 @@ html, body {
 .crossmy{
     display: flex;
     justify-content: flex-end;
+}
+
+.landing{
+    color: #FADB97;
 }
