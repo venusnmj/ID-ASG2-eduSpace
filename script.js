@@ -376,7 +376,8 @@ $("#suggestedCourses").mouseleave(function(){
         ${response[0].openHouse[oh].time}<br>
         ${response[0].openHouse[oh].polytechnic}<br>
         ${response[0].openHouse[oh].address}<br>
-        <a href="${response[0].openHouse[oh].website}">${response[0].openHouse[oh].website}</a></h3>
+        <a href="${response[0].openHouse[oh].website}" target="_blank">
+        ${response[0].openHouse[oh].website}</a></h3>
         <div class="sDate">
             <p class="xsDate">${response[0].openHouse[oh].addedDate}</p>
         </div>
@@ -445,7 +446,7 @@ for (var oh=0; oh<response[0].openHouse.length; oh++){
         ${response[0].openHouse[oh].time}<br>
         ${response[0].openHouse[oh].polytechnic}<br>
         ${response[0].openHouse[oh].address}<br>
-        <a href="${response[0].openHouse[oh].website}">${response[0].openHouse[oh].website}</a></h3>
+        <a href="${response[0].openHouse[oh].website}" target="_blank">${response[0].openHouse[oh].website}</a></h3>
         <div class="sDate">
             <p class="xsDate">${response[0].openHouse[oh].addedDate}</p>
         </div>
@@ -464,7 +465,7 @@ for (var oh=0; oh<response[0].openHouse.length; oh++){
         ${response[0].openHouse[oh].time}<br>
         ${response[0].openHouse[oh].polytechnic}<br>
         ${response[0].openHouse[oh].address}<br>
-        <a href="${response[0].openHouse[oh].website}">${response[0].openHouse[oh].website}</a></h3> 
+        <a href="${response[0].openHouse[oh].website}" target="_blank">${response[0].openHouse[oh].website}</a></h3> 
         <div class="sDate">
             <p class="xsDate">${response[0].openHouse[oh].addedDate}</p>
         </div>
@@ -509,7 +510,7 @@ for (var oh=0; oh<response[0].openHouse.length; oh++){
                 ${response[0].openHouse[oh].time}<br>
                 ${response[0].openHouse[oh].polytechnic}<br>
                 ${response[0].openHouse[oh].address}<br>
-                <a href="${response[0].openHouse[oh].website}">${response[0].openHouse[oh].website}</a></h3>
+                <a href="${response[0].openHouse[oh].website}" target="_blank">${response[0].openHouse[oh].website}</a></h3>
                 <div class="sDate">
                     <p class="xsDate">${response[0].openHouse[oh].addedDate}</p>
                 </div>
@@ -620,7 +621,7 @@ $(this).parent().parent().parent().removeClass("likey");
             ${responseC[0].list[apic].polytechnic}<br>
             JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
             ELR2B2: ${responseC[0].list[apic].score}<br>
-            <a href="${responseC[0].list[apic].website}">
+            <a href="${responseC[0].list[apic].website}" target="_blank">
             ${responseC[0].list[apic].website}
             </a>
             </h3> 
@@ -644,7 +645,7 @@ $(this).parent().parent().parent().removeClass("likey");
             ${responseC[0].list[apic].polytechnic}<br>
             JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
             ELR2B2: ${responseC[0].list[apic].score}<br>
-            <a href="${responseC[0].list[apic].website}">
+            <a href="${responseC[0].list[apic].website}" target="_blank">
             ${responseC[0].list[apic].website}
             </a>
             </h3> 
@@ -686,71 +687,7 @@ $(this).parent().parent().parent().removeClass("likey");
 
                     }
 
-                    /*
-                    else{
-                        console.log("have local storage")
-                        courseItem = JSON.parse(localStorage.getItem("courseTransaction"));
-                        //console.log(courseItem.length + responseC[0].list[0].courseName);
-                        for (var apic=0; apic<responseC[0].list.length; apic++){
-                            for (var ci=0; ci<courseItem.length;ci++){
-                                //console.log(courseItem[ci].mycourseName + "hearted");
-                                //console.log(responseC[0].list[apic].courseName + "api")
-                                if(courseItem[ci].mycourseName==responseC[0].list[apic].courseName+" "){
-                                    console.log("its a match" + courseItem[ci].mycourseName + responseC[0].list[apic].courseName);
-                                    console.log("add hearted");
-                                    if (responseC[0].list[apic].new=="yes"){
-                                        $("#courseSearchMenu").after(`<div class="courseDis ${responseC[0].list[apic].polyClass}">
-                                        <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
-                                        <div class="courseInfo">
-                                        <div class="sHeart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart cLiked">
-                                            <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
-                                        </svg>
-                                    </div>
-                                    <h1 class="cName">${responseC[0].list[apic].courseName} </h1>
-                                    <h3 class="cDesc">${responseC[0].list[apic].category}<br>
-                                    ${responseC[0].list[apic].polytechnic}<br>
-                                    JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
-                                    ELR2B2: ${responseC[0].list[apic].score}<br>
-                                    <a href="${responseC[0].list[apic].website}">
-                                    ${responseC[0].list[apic].website}
-                                    </a>
-                                    </h3> 
-                                    <div class="cStatus">
-                                        <p class="cNew">New</p>
-                                    </div>
-                                        </div>
-                                    </div>`);
-                                }
-                                else{
-                                    $("#courseSearchMenu").after(`<div class="courseDis ${responseC[0].list[apic].polyClass}">
-                                <div class="polyImg"><img src="images/${responseC[0].list[apic].image}" class="polyLogo"></div>
-                                <div class="courseInfo">
-                                <div class="sHeart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart cLiked">
-                                    <path class="heartColor" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
-                                </svg>
-                            </div>
-                            <h1 class="cName">${responseC[0].list[apic].courseName} </h1>
-                            <h3 class="cDesc">${responseC[0].list[apic].category}<br>
-                            ${responseC[0].list[apic].polytechnic}<br>
-                            JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
-                            ELR2B2: ${responseC[0].list[apic].score}<br>
-                            <a href="${responseC[0].list[apic].website}">
-                            ${responseC[0].list[apic].website}
-                            </a>
-                            </h3> 
-                            <div class="cStatus">
-                                <p class="cNew"></p>
-                            </div>
-                                </div>
-                            </div>`);
-                                }
-                            }
 
-                            }
-                        }
-                    }*/
 
 
                     
@@ -775,7 +712,7 @@ $(this).parent().parent().parent().removeClass("likey");
                                     ${responseC[0].list[apic].polytechnic}<br>
                                     JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
                                     ELR2B2: ${responseC[0].list[apic].score}<br>
-                                    <a href="${responseC[0].list[apic].website}">
+                                    <a href="${responseC[0].list[apic].website}" target="_blank">
                                     ${responseC[0].list[apic].website}
                                     </a>
                                     </h3> 
@@ -794,7 +731,7 @@ $(this).parent().parent().parent().removeClass("likey");
                             ${responseC[0].list[apic].polytechnic}<br>
                             JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
                             ELR2B2: ${responseC[0].list[apic].score}<br>
-                            <a href="${responseC[0].list[apic].website}">
+                            <a href="${responseC[0].list[apic].website}" target="_blank">
                             ${responseC[0].list[apic].website}
                             </a></h3> 
                             <div class="cStatus">
@@ -817,7 +754,7 @@ $(this).parent().parent().parent().removeClass("likey");
                                     ${responseC[0].list[apic].polytechnic}<br>
                                     JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
                                     ELR2B2: ${responseC[0].list[apic].score}<br>
-                                    <a href="${responseC[0].list[apic].website}">
+                                    <a href="${responseC[0].list[apic].website}" target="_blank">
                                     ${responseC[0].list[apic].website}
                                     </a>
                                     </h3> 
@@ -836,7 +773,7 @@ $(this).parent().parent().parent().removeClass("likey");
                             ${responseC[0].list[apic].polytechnic}<br>
                             JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
                             ELR2B2: ${responseC[0].list[apic].score}<br>
-                            <a href="${responseC[0].list[apic].website}">
+                            <a href="${responseC[0].list[apic].website}" target="_blank">
                             ${responseC[0].list[apic].website}
                             </a></h3> 
                             <div class="cStatus">
@@ -885,7 +822,7 @@ $(this).parent().parent().parent().removeClass("likey");
                                         ${responseC[0].list[apic].polytechnic}<br>
                                         JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
                                         ELR2B2: ${responseC[0].list[apic].score}<br>
-                                        <a href="${responseC[0].list[apic].website}">
+                                        <a href="${responseC[0].list[apic].website}" target="_blank">
                                         ${responseC[0].list[apic].website}
                                         </a>
                                         </h3> 
@@ -910,7 +847,7 @@ $(this).parent().parent().parent().removeClass("likey");
                                         ${responseC[0].list[apic].polytechnic}<br>
                                         JAE Course Code: ${responseC[0].list[apic].courseCode}<br>
                                         ELR2B2: ${responseC[0].list[apic].score}<br>
-                                        <a href="${responseC[0].list[apic].website}">
+                                        <a href="${responseC[0].list[apic].website}" target="_blank">
                                         ${responseC[0].list[apic].website}
                                         </a>
                                         </h3> 
