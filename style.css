@@ -247,6 +247,7 @@ font-family: 'Raleway', sans-serif;
     border: 1.5px solid black;
     border-radius: 15%;
     fill: rgb(228, 185, 182);
+    cursor: pointer;
   }
 
   .heart :hover{
@@ -370,6 +371,9 @@ font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: flex-end;
     padding: 15px;
+}
+.fa-times:hover{
+    cursor: pointer;
 }
 .crossmy{
     display: flex;
