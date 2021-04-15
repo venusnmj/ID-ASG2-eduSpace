@@ -16,4 +16,4 @@ website link: https://venusnmj.github.io/ID-ASG2-eduSpace/
 
 2021 update: 
 Go to https://cors-anywhere.herokuapp.com/corsdemo and click on the button "Request temporary access to the demo server.
-Then, continue over to our website link and the list of events and courses should show up if you wait for a while.
+Then, continue over to our website link and the list of events and courses should show up (please note that there might be lags).
