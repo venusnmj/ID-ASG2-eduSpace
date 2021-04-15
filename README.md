@@ -12,4 +12,8 @@ Respectively.
 4.	“Locate” allows you to see polytechnics’ location on the map and can help you visualise the distance from your home to the polytechnic
 5.	“My events” shows events that you have liked on the calendar pages
 6.	“Custom” allows you to see your customised list of polytechnic courses that you have liked
-https://venusnmj.github.io/ID-ASG2-eduSpace/ 
+website link: https://venusnmj.github.io/ID-ASG2-eduSpace/ 
+
+2021 update: 
+Go to https://cors-anywhere.herokuapp.com/corsdemo and click on the button "Request temporary access to the demo server.
+Then, continue over to our website link and the list of events and courses should show up if you wait for a while.
